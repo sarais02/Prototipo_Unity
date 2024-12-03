@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 initialScale;
     private Coroutine resetCoroutine;
+
+    public float speed = 5f;
+    public float rotationSpeed = 50f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +24,27 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+
+        if (movementDirection.magnitude > 1f)
+        {
+            movementDirection.Normalize();
+        }
+
+
+        transform.position = transform.position + movementDirection * speed * Time.deltaTime;
+
+
+        if (movementDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movementDirection), rotationSpeed * Time.deltaTime);
+        }
+    
+
+    float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
         if (scrollInput != 0)
         {
