@@ -7,35 +7,21 @@ public class PauseSystem : MonoBehaviour
     bool isPaused;
     void Update()
     {
-        
+        isPaused = false;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
             if (isPaused == false)
             {
                 Time.timeScale = 0;
                 pauseMenu.SetActive(true);
                 isPaused = true;
-                
-            }
-            else
-            {
-                Time.timeScale = 1;
-                pauseMenu.SetActive(false);
-                isPaused = false;
-                
             }
         }
-
     }
     public void QuitPauseMenu()
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
         isPaused = false;
-        
     }
-       
-
-  
 }
