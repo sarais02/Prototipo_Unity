@@ -4,6 +4,9 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    //Animator
+    Animator animator;
+
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
     [SerializeField] private float patrolSpeed;
@@ -16,6 +19,8 @@ public class EnemyAI : MonoBehaviour
     private void Start()
     {
         currentTarget = pointA;
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -43,13 +48,14 @@ public class EnemyAI : MonoBehaviour
         if (!isInvestigating)
         {
             StartCoroutine(InvestigationRoutine(distractionPosition));
+            animator.SetBool("Distraction", true);
         }
     }
 
     private IEnumerator InvestigationRoutine(Vector3 position)
     {
         isInvestigating = true;
-        //Debug.Log("Investing");
+        Debug.Log("Investing");
 
         while (Vector3.Distance(transform.position, position) > 0.1f)
         {
@@ -68,6 +74,7 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(investigationTime);
 
         isInvestigating = false;
+        animator.SetBool("Distraction", false);
         currentTarget = (Vector3.Distance(transform.position, pointA.position) < Vector3.Distance(transform.position, pointB.position)) ? pointA : pointB;
     }
 
