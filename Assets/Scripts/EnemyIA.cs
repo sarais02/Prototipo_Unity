@@ -64,13 +64,13 @@ public class EnemyAI : MonoBehaviour
         while (Vector3.Distance(transform.position, position) > 0.1f)
         {
             transform.position = Vector3.MoveTowards(transform.position, position, investigationSpeed * Time.deltaTime);
-            /*
+            
             Vector3 direction = (position - transform.position).normalized;
             if (direction != Vector3.zero)
             {
                 Quaternion lookRotation = Quaternion.LookRotation(direction);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
-            }*/
+            }
 
             yield return null;
         }

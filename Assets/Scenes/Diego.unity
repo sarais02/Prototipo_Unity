@@ -1332,6 +1332,7 @@ GameObject:
   - component: {fileID: 1621762161}
   - component: {fileID: 1621762162}
   - component: {fileID: 1621762163}
+  - component: {fileID: 1621762164}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1482,6 +1483,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34171ec3a68988241b4e07bd92f9f6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1621762164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621762157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6cd9d5999a576447a8618152542dce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1711203704}
+  distance: 5
+  height: 2
+  rotationSpeed: 5
+  followSpeed: 10
 --- !u!1 &1705653871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,6 +1649,7 @@ GameObject:
   - component: {fileID: 1711203702}
   - component: {fileID: 1711203701}
   - component: {fileID: 1711203700}
+  - component: {fileID: 1711203705}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -1743,6 +1762,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1711203705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711203699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bffcfc8c9e146e49b4ea17eaf3d274e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleSpeed: 0.2
+  resetSpeed: 8
+  minScale: {x: 0.1, y: 0.1, z: 0.1}
+  maxScale: {x: 5, y: 5, z: 5}
+  time: 3
+  speed: 5
+  rotationSpeed: 50
 --- !u!1 &1810784334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 58d5648d6c594d242a5e3c709047ff36, type: 3}
