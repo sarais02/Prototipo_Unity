@@ -29,11 +29,11 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
 
-        if (movementDirection.magnitude > 1f)
-        {
-            movementDirection.Normalize();
-        }
-
+        //if (movementDirection.magnitude > 1f)
+        //{
+        //    movementDirection.Normalize();
+        //}
+        movementDirection.Normalize();
 
         transform.position = transform.position + movementDirection * speed * Time.deltaTime;
 
