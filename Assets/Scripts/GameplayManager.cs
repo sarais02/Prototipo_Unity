@@ -1,22 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+public class GameplayManager : MonoBehaviour
 {
+    private static GameplayManager instance;
+    public static GameplayManager GetInstance() {  return instance; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
