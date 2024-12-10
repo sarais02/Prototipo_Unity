@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     public float rotationSpeed = 50f;
     private Animator animator;
+    public Camera playerCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         initialScale = transform.localScale;
         animator = GetComponent<Animator>();
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -30,6 +32,8 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+
+
 
         //if (movementDirection.magnitude > 1f)
         //{
@@ -50,7 +54,25 @@ public class PlayerController : MonoBehaviour
 
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
-        if (scrollInput != 0)
+        if (movementDirection.magnitude > 0)
+        {
+            // Obtener la rotación de la cámara para orientar el movimiento
+            Vector3 forward = playerCamera.transform.forward; // Dirección de la cámara hacia adelante
+            Vector3 right = playerCamera.transform.right;     // Dirección de la cámara hacia la derecha
+
+            // Hacer que la dirección del movimiento esté basada en la cámara
+            forward.y = 0;  // Asegurarse de que no se incluyan rotaciones en el eje Y (no afecte la altura)
+            right.y = 0;
+
+            // Calcular el movimiento final basado en las entradas
+            Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
+            moveDirection.Normalize();  // Normalizar la dirección
+
+            // Mover el jugador en la dirección calculada
+            transform.position += moveDirection * speed * Time.deltaTime;
+        }
+
+            if (scrollInput != 0)
         {
             // Calcula la nueva escala
             Vector3 newScale = transform.localScale + Vector3.one * scrollInput * scaleSpeed;
