@@ -14,11 +14,13 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 5f;
     public float rotationSpeed = 50f;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         initialScale = transform.localScale;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,9 +44,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movementDirection), rotationSpeed * Time.deltaTime);
         }
-    
 
-    float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        animator.SetFloat("XSpeed", horizontalInput);  // Horizontal movement
+        animator.SetFloat("YSpeed", verticalInput);    // Vertical movement
+
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
         if (scrollInput != 0)
         {
