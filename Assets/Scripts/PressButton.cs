@@ -4,30 +4,30 @@ public class PressButton : MonoBehaviour
 {
     public GameObject pulsador;
     public GameObject jugador;
-    public GameObject puerta;
-    //public DoorOpener puerta; //A cada boton hay que asociarle una puerta en el Inspector
-
-
+    public GameObject puerta; //A cada boton hay que asociarle una puerta en el Inspector
+    
     public UnityEvent onPress;
     public UnityEvent onRelease;
 
-
-
     AudioSource efectosonido;
+    AudioSource sonidopuerta; 
 
     bool isPressed = false;
-    public bool opendoor = false;
+    bool opendoor = false;
+    bool doorSoundPlayed = false;
+    bool inTrigger = false;
     private Animator doorAnimator;
-
+    Collider colliderobj;
     Vector3 initialPosition = Vector3.zero;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         efectosonido = GetComponent<AudioSource>();
-        isPressed = false; 
+        colliderobj = this.GetComponent<Collider>();
         initialPosition = pulsador.transform.localPosition;
         doorAnimator = puerta.GetComponent<Animator>();
+        sonidopuerta = puerta.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,53 +38,58 @@ public class PressButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isPressed == false && (other.gameObject == jugador)) { //Chequea si no esta presionado antes: ispressed!=true
-            pulsador.transform.localPosition = initialPosition - new Vector3(0, 0.1f, 0);
+        if (!isPressed && other.gameObject == jugador) { //Chequea si no esta presionado antes: ispressed!=true isPressed == false && (
+            inTrigger = true;
+            jugador.transform.position = new Vector3(pulsador.transform.position.x, (pulsador.transform.lossyScale.y + jugador.transform.lossyScale.y/2), pulsador.transform.position.z);
+            jugador.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
             efectosonido.Play();
-            Debug.Log("Cambio posicion");
 
             CheckPlayerSize(jugador, pulsador);
-            isPressed = true;
-            onPress.Invoke(); //Funcion Check Size
-        }
+            //onPress.Invoke(); //Funcion Check Size
+            isPressed = true;            
+        }               
     }
 
-    private void OnTriggerExit(Collider other) {
-        if (other.gameObject == jugador)
-        {
-            pulsador.transform.localPosition = initialPosition;
-            //onRelease.Invoke();
-            //isPressed = false; //TODO cuando salte el personaje activar!
+    private void OnTriggerStay(Collider other) {
+        if (isPressed && other.gameObject == jugador) {
+            CheckPlayerSize(jugador, pulsador); 
         } 
     }
 
-    public void OpenDoor() {
-        if (opendoor==true)
+    private void OnTriggerExit(Collider other) {
+        if (inTrigger && other.gameObject==jugador)
         {
-            doorAnimator.SetTrigger("Door_Open");
-            //doorAnimator.SetTrigger("Door_Open");
-            Debug.Log("Puerta Abierta");
-        }
-        else
-        {
-            Debug.Log(opendoor);
-            Debug.Log("Puerta Cerrada!");
-        }
+            inTrigger = false;
+            pulsador.transform.localPosition = initialPosition;
+            jugador.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;           
+            isPressed = false;
+            doorSoundPlayed = false;                       
+        } 
     }
 
+    
     public void CheckPlayerSize(GameObject playerobj, GameObject pulsobj)
     {
         Debug.Log("Chequeando Tamaño...");
-        float sizeplayer = playerobj.GetComponent<SphereCollider>().radius;
-        float sizepulsador = pulsobj.GetComponent<BoxCollider>().size.x;
+        float sizeplayer = playerobj.transform.lossyScale.x; 
+        float sizepulsador = pulsobj.transform.lossyScale.x;
         Debug.Log(sizeplayer);
         Debug.Log(sizepulsador);
-        if ((sizeplayer*2) == sizepulsador) {
-            Debug.Log("Son del mismo tamaño!");
+        if ((Mathf.Abs(sizeplayer - sizepulsador) < 0.1f) && !opendoor) {
+            doorAnimator.SetTrigger("Door_Open");
+            if (!doorSoundPlayed)
+            {
+                pulsador.transform.localPosition = initialPosition - new Vector3(0, 0.1f, 0);
+                sonidopuerta.Play();
+                doorSoundPlayed = true; //Evita que se repita el sonido
+            }
+            Debug.Log("Puerta Abierta");
             opendoor = true;
-        }else
-        {
+        }
+        else if (!opendoor) {
+            // Si no coinciden los tamaños y la puerta no está abierta, permanece cerrada
             Debug.Log("No son del mismo tamaño...");
+            Debug.Log("Puerta Cerrada!");
             opendoor = false;
          }       
     }
