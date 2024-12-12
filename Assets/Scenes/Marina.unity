@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710974576531883339, guid: d369f99afb0b0b24ba2950ea4f146f59, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Puerta1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 1958584768}
   - component: {fileID: 1958584767}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
