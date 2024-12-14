@@ -104,3 +104,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257122
+  packageName: Interior House Assets | URP
+  packageVersion: 1.0
+  assetPath: Assets/_Unity Essentials/Models/Walls/Door.FBX
+  uploadId: 615370
