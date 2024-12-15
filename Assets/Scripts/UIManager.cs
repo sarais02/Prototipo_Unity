@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         messages = new[] { "Encuentra el mega pan, pero prr prr que no te pillen!",
             "Presiona 'F' para lanzar una distraccion",
             "Utiliza la rueda del raton para cambiar tu escala",
-            "Adaptate al tamaño del boton para poder abrir la puerta"};
+            "Adaptate a la escala del boton para poder abrir la puerta"};
     }
     void Start()
     {

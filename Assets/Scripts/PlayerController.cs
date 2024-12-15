@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     private float currentCameraRotationX = 0f;
     private float currentCameraRotationY = 0f;
 
+    private float timeSinceLastScaleChange;
+    private bool isScaling = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -104,17 +107,21 @@ public class PlayerController : MonoBehaviour
 
             transform.localScale = newScale;
 
-            if (resetCoroutine != null)
+            if (!isScaling)
             {
-                StopCoroutine(resetCoroutine);
+                isScaling = true;
+                timeSinceLastScaleChange = Time.time; // Guarda el momento inicial del escalado
+                StartCoroutine(ResetScaleAfterDelay());
             }
-            resetCoroutine = StartCoroutine(ResetScaleAfterDelay());
         }
     }
 
     IEnumerator ResetScaleAfterDelay()
     {
-        yield return new WaitForSeconds(time);
+        while (Time.time < timeSinceLastScaleChange + time)
+        {
+            yield return null; // Espera hasta que se cumpla el tiempo de retraso
+        }
 
         while (Vector3.Distance(transform.localScale, initialScale) > 0.01f)
         {
@@ -123,6 +130,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.localScale = initialScale;
-        resetCoroutine = null;
+        isScaling = false;
     }
 }
