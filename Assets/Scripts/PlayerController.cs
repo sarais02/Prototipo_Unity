@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 maxScale = new Vector3(5f, 5f, 5f);  // Escala máxima permitida
     [SerializeField] private float time = 3f;
 
+    public Vector3 size;
+
     private Vector3 initialScale;
     private Coroutine resetCoroutine;
 
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         initialScale = transform.localScale;
         animator = GetComponent<Animator>();
+        size = GetComponent<MeshRenderer>().bounds.size;
 
         if (playerCamera == null)
         {
@@ -82,8 +85,11 @@ public class PlayerController : MonoBehaviour
         }
 
         // Actualizar animaciones
-        animator.SetFloat("XSpeed", horizontalInput);  // Movimiento horizontal
-        animator.SetFloat("YSpeed", verticalInput);    // Movimiento vertical
+        if (animator != null)
+        {
+            animator.SetFloat("XSpeed", horizontalInput);  // Movimiento horizontal
+            animator.SetFloat("YSpeed", verticalInput);    // Movimiento vertical
+        }
 
         // Escalado con la rueda del ratón
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");

@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.Events;
 public class PressButton : MonoBehaviour
 {
-    public GameObject pulsador;
     public GameObject jugador;
     public GameObject puerta; //A cada boton hay que asociarle una puerta en el Inspector
     
@@ -25,7 +24,7 @@ public class PressButton : MonoBehaviour
     {
         efectosonido = GetComponent<AudioSource>();
         colliderobj = this.GetComponent<Collider>();
-        initialPosition = pulsador.transform.localPosition;
+        initialPosition = transform.localPosition;
         doorAnimator = puerta.GetComponent<Animator>();
         sonidopuerta = puerta.GetComponent<AudioSource>();
     }
@@ -38,21 +37,25 @@ public class PressButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isPressed && other.gameObject == jugador) { //Chequea si no esta presionado antes: ispressed!=true isPressed == false && (
+        if (!isPressed && other.gameObject == jugador && !opendoor) { //Chequea si no esta presionado antes: ispressed!=true isPressed == false && (
             inTrigger = true;
-            jugador.transform.position = new Vector3(pulsador.transform.position.x, (pulsador.transform.lossyScale.y + jugador.transform.lossyScale.y/2), pulsador.transform.position.z);
-            jugador.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
+            jugador.transform.position = new Vector3(
+                transform.position.x, 
+                transform.position.y + (transform.lossyScale.y/2 + jugador.GetComponent<PlayerController>().size.y/2), 
+                transform.position.z);
+            jugador.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | 
+                RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
             efectosonido.Play();
 
-            CheckPlayerSize(jugador, pulsador);
+            CheckPlayerSize(jugador, this.gameObject);
             //onPress.Invoke(); //Funcion Check Size
             isPressed = true;            
         }               
     }
 
     private void OnTriggerStay(Collider other) {
-        if (isPressed && other.gameObject == jugador) {
-            CheckPlayerSize(jugador, pulsador); 
+        if (isPressed && other.gameObject == jugador && !opendoor) {
+            CheckPlayerSize(jugador, this.gameObject); 
         } 
     }
 
@@ -60,8 +63,9 @@ public class PressButton : MonoBehaviour
         if (inTrigger && other.gameObject==jugador)
         {
             inTrigger = false;
-            pulsador.transform.localPosition = initialPosition;
-            jugador.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;           
+            transform.localPosition = initialPosition;
+            jugador.GetComponent<Rigidbody>().constraints =  RigidbodyConstraints.FreezeRotationZ | 
+                RigidbodyConstraints.FreezeRotationX; ;           
             isPressed = false;
             doorSoundPlayed = false;                       
         } 
@@ -79,7 +83,7 @@ public class PressButton : MonoBehaviour
             doorAnimator.SetTrigger("Door_Open");
             if (!doorSoundPlayed)
             {
-                pulsador.transform.localPosition = initialPosition - new Vector3(0, 0.1f, 0);
+                transform.localPosition = initialPosition - new Vector3(0, 0.1f, 0);
                 sonidopuerta.Play();
                 doorSoundPlayed = true; //Evita que se repita el sonido
             }
@@ -91,6 +95,11 @@ public class PressButton : MonoBehaviour
             Debug.Log("No son del mismo tamaño...");
             Debug.Log("Puerta Cerrada!");
             opendoor = false;
-         }       
+        }       
+    }
+
+    public bool IsDoorOpen()
+    {
+        return opendoor;
     }
 }
