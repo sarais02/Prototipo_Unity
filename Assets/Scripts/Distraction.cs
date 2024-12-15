@@ -30,7 +30,7 @@ public class Distraction : MonoBehaviour
                 }
             }
         }
-        Destroy(gameObject);
+        Destroy(gameObject, 2.5f);
     }
 
     private void OnDrawGizmosSelected()
