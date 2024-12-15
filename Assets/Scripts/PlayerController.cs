@@ -28,11 +28,13 @@ public class PlayerController : MonoBehaviour
 
     private float timeSinceLastScaleChange;
     private bool isScaling = false;
+    private Vector3 initialPos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         initialScale = transform.localScale;
+        initialPos = transform.position;
         animator = GetComponent<Animator>();
         size = GetComponent<MeshRenderer>().bounds.size;
 
@@ -131,5 +133,19 @@ public class PlayerController : MonoBehaviour
 
         transform.localScale = initialScale;
         isScaling = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Water"))
+        {
+            Respawn();
+        }
+    }
+
+    private void Respawn()
+    {
+        Debug.Log("Respawn");
+        transform.position = initialPos;
     }
 }
