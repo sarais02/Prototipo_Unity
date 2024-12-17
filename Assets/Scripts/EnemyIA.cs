@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float patrolSpeed;
     [SerializeField] private float lookDuration; // Tiempo mirando para LookAndRest
     [SerializeField] private float restDuration; // Tiempo descansando para LookAndRest
+    //[SerializeField] private float patrollingTurningSpeed; // Velocidad de giro patruyando
 
     [SerializeField] private float investigationSpeed;
     [SerializeField] private float investigationTime;

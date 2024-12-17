@@ -6,7 +6,6 @@ public class Credits : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("slay?");
         if(other.CompareTag("Player"))
         {
             creditsCanvas.SetActive(true);
