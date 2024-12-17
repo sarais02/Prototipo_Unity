@@ -5,6 +5,8 @@ using System;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
+    [SerializeField] GameObject menuPanel;
+    GameManager gm;
     public float time = 6.5f;
 
     public int index = 0;
@@ -20,7 +22,9 @@ public class UIManager : MonoBehaviour
     }
     void Start()
     {
+        gm = GameManager.GetInstance();
         Invoke("HideTargetObject", time);
+        HideTargetObject();
     }
 
     // Update is called once per frame
@@ -33,10 +37,10 @@ public class UIManager : MonoBehaviour
     {
         text.gameObject.SetActive(false);
     }
-
-    void ShowTargetObject()
+    public void ShowTargetObject()
     {
-        text.gameObject.SetActive(true);
+        if(gm.IsTutorial()) text.gameObject.SetActive(true);
+        menuPanel.gameObject.SetActive(false);
     }
 
     public void ChangeText()

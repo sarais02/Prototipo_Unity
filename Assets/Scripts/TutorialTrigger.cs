@@ -4,11 +4,13 @@ using DG.Tweening;
 public class TutorialTrigger : MonoBehaviour
 {
     [SerializeField] UIManager ui;
+    GameManager gm;
     private bool enter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enter = false;
+        gm = GameManager.GetInstance();
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class TutorialTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerController>() && !enter) 
+        if (gm && gm.IsTutorial() && other.GetComponent<PlayerController>() && !enter) 
         { 
             enter = true;
             ui.ChangeText();
@@ -33,6 +35,7 @@ public class TutorialTrigger : MonoBehaviour
                 Invoke("DisableImage", ui.time);
             }
         }
+        else if(gm && !gm.IsTutorial()) ui.HideTargetObject();
     }
 
     private void DisableImage()

@@ -274,7 +274,7 @@ public class EnemyAI : MonoBehaviour
 
         if (!playerDetected)
         {
-            Debug.Log("Player not in sight.");
+            //Debug.Log("Player not in sight.");
         }
     }
 }

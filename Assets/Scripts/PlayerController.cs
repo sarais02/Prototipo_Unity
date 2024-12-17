@@ -9,10 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 maxScale = new Vector3(5f, 5f, 5f);  // Escala máxima permitida
     [SerializeField] private float time = 3f;
 
+    GameManager gm;
     public Vector3 size;
-
     private Vector3 initialScale;
-    private Coroutine resetCoroutine;
 
     public float speed = 5f;
     public float rotationSpeed = 50f;
@@ -33,6 +32,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gm=GameManager.GetInstance();
         initialScale = transform.localScale;
         initialPos = transform.position;
         animator = GetComponent<Animator>();
@@ -47,20 +47,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Control de rotación de la cámara con el ratón
-        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
+        if (gm && !gm.IsMenu())
+        {
+            CameraMovement();
 
-        currentCameraRotationX -= mouseY;
-        currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -50f, 50f);
-
-        currentCameraRotationY += mouseX;
-
-        // Aplicar rotación a la cámara
-        Quaternion rotation = Quaternion.Euler(currentCameraRotationX, currentCameraRotationY, 0);
-        Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);
-        playerCamera.transform.position = transform.position + rotation * cameraOffset;
-        playerCamera.transform.LookAt(transform.position);
+            ScrollScale();
+        }
 
         // Movimiento del jugador
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -96,6 +88,27 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("YSpeed", verticalInput);    // Movimiento vertical
         }
 
+    }
+    
+    private void CameraMovement()
+    {
+        // Control de rotación de la cámara con el ratón
+        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
+
+        currentCameraRotationX -= mouseY;
+        currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -50f, 50f);
+
+        currentCameraRotationY += mouseX;
+
+        // Aplicar rotación a la cámara
+        Quaternion rotation = Quaternion.Euler(currentCameraRotationX, currentCameraRotationY, 0);
+        Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);
+        playerCamera.transform.position = transform.position + rotation * cameraOffset;
+        playerCamera.transform.LookAt(transform.position);
+    }
+    private void ScrollScale()
+    {
         // Escalado con la rueda del ratón
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         if (scrollInput != 0)
@@ -117,7 +130,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     IEnumerator ResetScaleAfterDelay()
     {
         while (Time.time < timeSinceLastScaleChange + time)
@@ -142,7 +154,6 @@ public class PlayerController : MonoBehaviour
             Respawn();
         }
     }
-
     private void Respawn()
     {
         Debug.Log("Respawn");
