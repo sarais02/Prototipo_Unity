@@ -32,6 +32,15 @@ public class EnemyAI : MonoBehaviour
     private bool isResting = false; // Usado solo para LookAndRest
     private float lookTimer = 0f; // Temporizador para LookAndRest
 
+    [SerializeField] private float viewAngle = 45f; // Ángulo del cono de visión
+    [SerializeField] private float viewDistance = 10f; // Distancia máxima del cono de visión
+    [SerializeField] private LayerMask targetMask; // Capa del jugador
+    [SerializeField] private LayerMask obstacleMask; // Capa de obstáculos
+
+    private Transform player; // Referencia al jugador
+    private bool playerDetected = false; // Estado de detección
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -43,6 +52,11 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        DetectPlayer();
+        if (playerDetected)
+        {
+            //Sonido
+        }
         if (!isInvestigating)
         {
             switch (enemyType)
@@ -69,9 +83,11 @@ public class EnemyAI : MonoBehaviour
 
     private void LookSideToSide()
     {
-        float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 90f) - 45f; // Oscila entre -45 y 45 grados
+        // Oscila entre -135 y -45 grados
+        float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 90f) - 135f;
         transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
     }
+
 
     private void PatrolWaypoints()
     {
@@ -99,32 +115,14 @@ public class EnemyAI : MonoBehaviour
 
     private void LookAndRest()
     {
-        if (isResting)
-        {
-            lookTimer -= Time.deltaTime;
-            if (lookTimer <= 0)
-            {
-                isResting = false;
-                lookTimer = lookDuration;
-            }
-        }
-        else
-        {
-            lookTimer -= Time.deltaTime;
-            if (lookTimer <= 0)
-            {
-                isResting = true;
-                lookTimer = restDuration;
-            }
-
-            // Rotación mientras está mirando
-            float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 90f) - 45f; // Oscila entre -45 y 45 grados
-            transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
-        }
+        // Oscila entre -135 y -215 grados
+        float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 80f) - 215f;
+        transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
     }
 
     public void Investigate(Vector3 distractionPosition) //Solo es public para llamarlo desde Distraction
     {
+
         if (!isInvestigating)
         {
             switch (enemyType)
@@ -199,8 +197,8 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // Dibuja waypoints en la vista del editor
-    private void OnDrawGizmos()
+    // Dibuja en la vista del editor
+    private void OnDrawGizmosSelected()
     {
         if (waypoints != null && waypoints.Length > 0)
         {
@@ -217,6 +215,58 @@ public class EnemyAI : MonoBehaviour
                     Gizmos.DrawLine(waypoints[i].position, waypoints[0].position); // Cerrar ciclo
                 }
             }
+        }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, viewDistance);
+
+        Vector3 viewAngleA = DirectionFromAngle(-viewAngle / 2);
+        Vector3 viewAngleB = DirectionFromAngle(viewAngle / 2);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + viewAngleA * viewDistance);
+        Gizmos.DrawLine(transform.position, transform.position + viewAngleB * viewDistance);
+
+        if (playerDetected)
+        {
+            Gizmos.color = Color.green;
+            //Gizmos.DrawLine(transform.position, player.position);
+        }
+    }
+
+    private Vector3 DirectionFromAngle(float angleInDegrees)
+    {
+        float angle = angleInDegrees + transform.eulerAngles.y;
+        return new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), 0, Mathf.Cos(angle * Mathf.Deg2Rad));
+    }
+
+
+    private void DetectPlayer()
+    {
+        playerDetected = false;
+        Collider[] targetsInView = Physics.OverlapSphere(transform.position, viewDistance, targetMask);
+
+        foreach (Collider target in targetsInView)
+        {
+            Vector3 directionToTarget = (target.transform.position - transform.position).normalized;
+
+            if (Vector3.Angle(transform.forward, directionToTarget) < viewAngle / 2)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
+
+                // Verifica si hay algún obstáculo entre el enemigo y el jugador
+                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask))
+                {
+                    playerDetected = true;
+                    Debug.Log("Player detected!");
+                    break;
+                }
+            }
+        }
+
+        if (!playerDetected)
+        {
+            Debug.Log("Player not in sight.");
         }
     }
 }
