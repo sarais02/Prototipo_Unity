@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &39420743 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8928903272796681054, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-  m_PrefabInstance: {fileID: 407918349}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d96c11972cdf34a80ed42cedd97616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &64837545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -388,63 +377,6 @@ Transform:
   - {fileID: 277970053}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &407918349
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 224.8326
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 42.10158
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 71.64941
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575775674887765291, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303514027189481181, guid: d2e772362bda2f543af6576481ca02de, type: 3}
-      propertyPath: m_Name
-      value: LevelManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d2e772362bda2f543af6576481ca02de, type: 3}
 --- !u!1 &464524607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorButton: {fileID: 1484689265}
-  gameplayManager: {fileID: 39420743}
 --- !u!1001 &1290804345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4307,7 +4238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1120632382}
-  gameplayManager: {fileID: 39420743}
 --- !u!82 &7791216092757948363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4464,7 +4394,6 @@ SceneRoots:
   - {fileID: 64837545}
   - {fileID: 1044359232}
   - {fileID: 1270008701}
-  - {fileID: 407918349}
   - {fileID: 1255720497}
   - {fileID: 475145983}
   - {fileID: 1902496930}
