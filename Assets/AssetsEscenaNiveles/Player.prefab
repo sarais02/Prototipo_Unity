@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5616810580686333216}
   - component: {fileID: 7018299157691864970}
   - component: {fileID: 7446246868058035260}
+  - component: {fileID: 3330845796992210476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -133,8 +134,13 @@ MonoBehaviour:
   minScale: {x: 0.1, y: 0.1, z: 0.1}
   maxScale: {x: 5, y: 5, z: 5}
   time: 3
+  size: {x: 0, y: 0, z: 0}
   speed: 5
   rotationSpeed: 50
+  playerCamera: {fileID: 0}
+  cameraRotationSpeed: 5
+  cameraDistance: 5
+  cameraHeight: 10
 --- !u!65 &7446246868058035260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -156,3 +162,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3330845796992210476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5810574518926172882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee4e9750736d0849bab0f27e08ef491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
