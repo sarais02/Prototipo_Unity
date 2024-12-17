@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1207425268235236721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7277831287043695315}
+  - component: {fileID: 7691541702763998774}
+  m_Layer: 0
+  m_Name: RoombaPivot
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7277831287043695315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207425268235236721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 865057981398946583}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7691541702763998774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207425268235236721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24f56f64c194b74da97c0fd77aea8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: 1
+  rotationSpeed: 0.5
+  waypoints: []
+  patrolSpeed: 0.8
+  lookDuration: 3
+  restDuration: 4
+  investigationSpeed: 5
+  investigationTime: 3
+  viewAngle: 45
+  viewDistance: 10
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!1001 &832027781471401212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7277831287043695315}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14.9928875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.992887
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14.9928875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.022
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.04622934
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9989309
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 185.299
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+      propertyPath: m_Name
+      value: roomba
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+--- !u!4 &865057981398946583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82d4c87164f5e0a4eb3afc070375e335, type: 3}
+  m_PrefabInstance: {fileID: 832027781471401212}
+  m_PrefabAsset: {fileID: 0}
