@@ -37,12 +37,19 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask targetMask; // Capa del jugador
     [SerializeField] private LayerMask obstacleMask; // Capa de obstáculos
 
-    private Transform player; // Referencia al jugador
+    private Transform playerTransform; // Referencia al jugador
+    private GameObject player;
     private bool playerDetected = false; // Estado de detección
 
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+
         animator = GetComponent<Animator>();
 
         // Si hay waypoints, selecciona el primero
@@ -56,6 +63,7 @@ public class EnemyAI : MonoBehaviour
         if (playerDetected)
         {
             //Sonido
+            player.GetComponent<PlayerRespawn>()?.KillPlayer();
         }
         if (!isInvestigating)
         {
@@ -230,7 +238,7 @@ public class EnemyAI : MonoBehaviour
         if (playerDetected)
         {
             Gizmos.color = Color.green;
-            //Gizmos.DrawLine(transform.position, player.position);
+            Gizmos.DrawLine(transform.position, playerTransform.position);
         }
     }
 
