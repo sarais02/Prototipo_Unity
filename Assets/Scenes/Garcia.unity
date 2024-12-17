@@ -1186,7 +1186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1120632382}
-  gm: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
 --- !u!1 &869609079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,7 +1790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 464524608}
   menuPanel: {fileID: 1981100838}
-  gm: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
   time: 8
   index: 0
   messages: []
@@ -1856,7 +1854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1120632382}
-  gm: {fileID: 0}
 --- !u!65 &1167314122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2140,7 +2137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorButton: {fileID: 1484689265}
   gameplayManager: {fileID: 39420743}
-  gm: {fileID: 1976464880}
 --- !u!1001 &1290804345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2646,7 +2642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1120632382}
-  gm: {fileID: 0}
 --- !u!65 &1369613300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2861,7 +2856,6 @@ MonoBehaviour:
   minScale: {x: 0.1, y: 0.1, z: 0.1}
   maxScale: {x: 5, y: 5, z: 5}
   time: 3
-  gm: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
   size: {x: 0, y: 0, z: 0}
   speed: 5
   rotationSpeed: 50
@@ -3992,8 +3986,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 39420743}
-        m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
+      - m_Target: {fileID: 1976464880}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -4312,7 +4306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ff2840a717f2b4892df4c6176c3e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
   ui: {fileID: 1120632382}
   gameplayManager: {fileID: 39420743}
 --- !u!82 &7791216092757948363

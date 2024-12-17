@@ -4,7 +4,6 @@ public class PlayButton : MonoBehaviour
 {
     GameManager gm;
     [SerializeField] UIManager ui;
-    [SerializeField] GameplayManager gameplayManager;
     private void Start()
     {
         gm = GameManager.GetInstance();
@@ -21,7 +20,8 @@ public class PlayButton : MonoBehaviour
         }
         else
         {
-            gameplayManager.LoadLevel("EscenaNiveles");
+            gm.LoadLevel("EscenaNiveles");
+            //gameplayManager.LoadLevel("EscenaNiveles");
         }
     }
 }

@@ -38,4 +38,14 @@ public class GameManager : MonoBehaviour
 
     public bool IsMenu() { return menu; }
     public void SetMenu(bool t) { menu = t; }
+
+    public void LoadLevel(string sceneName)
+    {
+        if (sceneName == "Garcia") SetMenu(true);
+        SceneManager.LoadScene(sceneName);
+    }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
