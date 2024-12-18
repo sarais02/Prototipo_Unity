@@ -42,6 +42,14 @@ public class PlayerController : MonoBehaviour
         {
             playerCamera = Camera.main;  // Si no se asigna, buscar la cámara principal
         }
+        
+        //Vector3 savedPos = new Vector3(
+        //    PlayerPrefs.GetFloat("PlayerPosX"),
+        //    PlayerPrefs.GetFloat("PlayerPosY"),
+        //    PlayerPrefs.GetFloat("PlayerPosZ"));
+
+        //if(savedPos != Vector3.zero)
+        //    transform.position = savedPos;
     }
 
     // Update is called once per frame
@@ -73,6 +81,9 @@ public class PlayerController : MonoBehaviour
 
         // Mover el jugador en la dirección calculada
         transform.position += moveDirection * speed * Time.deltaTime;
+        //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+        //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+        //PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
 
         // Rotar el jugador para mirar hacia la dirección del movimiento
         if (moveDirection != Vector3.zero)

@@ -17,7 +17,8 @@ public class TutorialDoor : MonoBehaviour
         {
             Debug.Log("CAMBIO ESCENA");
             gm.SetTutorial(false);
-            
+            PlayerPrefs.SetInt("IsTutorial", 0);
+            PlayerPrefs.Save();
             gm.LoadLevel("EscenaNiveles");
             //gm.LoadLevel("Diego");
         }

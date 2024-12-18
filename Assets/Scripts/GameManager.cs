@@ -21,7 +21,17 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        tutorial = true;
+
+        if (!PlayerPrefs.HasKey("IsTutorial")) // Si no existe, establece un valor predeterminado
+        { 
+            PlayerPrefs.SetInt("IsTutorial", 1); // 1 para true, 0 para false
+            PlayerPrefs.Save(); // Guarda los cambios
+        }
+
+        // Obtener el valor de "IsTutorial"
+        int i = PlayerPrefs.GetInt("IsTutorial");
+        if (i == 1) tutorial = true;
+        else tutorial = false;
         menu = true;
     }
 
@@ -30,14 +40,17 @@ public class GameManager : MonoBehaviour
     {
         if (menu) Time.timeScale = 0;
         else Time.timeScale = 1;
-
-        //Debug.Log("Menu " + menu);
     }
     public bool IsTutorial() { return tutorial; }
     public void SetTutorial(bool t) { tutorial = t; }
 
     public bool IsMenu() { return menu; }
-    public void SetMenu(bool t) { menu = t; }
+    public void SetMenu(bool t) 
+    { 
+        menu = t; 
+        //PlayerPrefs.SetInt("IsMenu", menu ? 1 : 0);
+        //PlayerPrefs.Save();
+    }
 
     public void LoadLevel(string sceneName)
     {

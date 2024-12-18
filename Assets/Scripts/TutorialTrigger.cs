@@ -13,12 +13,6 @@ public class TutorialTrigger : MonoBehaviour
         gm = GameManager.GetInstance();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (gm && gm.IsTutorial() && other.GetComponent<PlayerController>() && !enter) 
