@@ -162,6 +162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nightstand
       objectReference: {fileID: 0}
+    - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9106246787774262725, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.2175002
@@ -283,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 917278889609147279, guid: 7ffe462c97c4b684991a6f9472318357, type: 3}
       propertyPath: m_Name
       value: kitchen_table_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 917278889609147279, guid: 7ffe462c97c4b684991a6f9472318357, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1709723240021201498, guid: 7ffe462c97c4b684991a6f9472318357, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -446,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Twin Wardrobe
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e478b462dd4cdd47ac83b5a69d74ec2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -526,9 +538,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -582,6 +602,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -603,7 +635,7 @@ GameObject:
   - component: {fileID: 60852240}
   - component: {fileID: 60852242}
   - component: {fileID: 60852241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TvLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,6 +753,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 503830470}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.766
@@ -769,9 +809,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_Name
       value: DoorClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -834,6 +890,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ea3d2a5bf18aa84284124fe246a65b1, type: 3}
       propertyPath: m_Name
       value: Triple Cactus
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ea3d2a5bf18aa84284124fe246a65b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -905,6 +965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RugRectangleLong (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3176573852084882120, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3969229720712637213, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -930,7 +994,7 @@ GameObject:
   - component: {fileID: 102280405}
   - component: {fileID: 102280407}
   - component: {fileID: 102280406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,9 +1112,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1103,6 +1175,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1160,6 +1244,10 @@ PrefabInstance:
     - target: {fileID: 5862214619906347925, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
       propertyPath: m_Name
       value: closet_002 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862214619906347925, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489992244797294895, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
       propertyPath: m_LocalScale.x
@@ -1265,6 +1353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 6mWall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
       propertyPath: m_LocalScale.y
       value: 2
@@ -1327,9 +1419,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1383,6 +1483,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1404,6 +1516,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1475,6 +1591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 6mWall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.3826094
@@ -1536,6 +1656,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1610,6 +1734,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1741,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bathroom_item_001
       objectReference: {fileID: 0}
+    - target: {fileID: 830209003240761726, guid: ebcde7b85f0afbb42983365ec2774818, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1190501440369494187, guid: ebcde7b85f0afbb42983365ec2774818, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1763,9 +1895,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1819,6 +1959,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1840,6 +1992,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1915,6 +2071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -1984,6 +2144,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2112,6 +2276,10 @@ PrefabInstance:
       value: lounge_chair_001 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4237530767371831047, guid: 4c4b2b0935db72a45a61b3a6e86d95bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237530767371831047, guid: 4c4b2b0935db72a45a61b3a6e86d95bf, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2163,6 +2331,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 1396365084333384706, guid: 4c00d4e527e5ce04dbbb4920cec10370, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7345225103516973849, guid: 4c00d4e527e5ce04dbbb4920cec10370, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.213207
@@ -2207,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantPotRoundMedium
       objectReference: {fileID: 0}
+    - target: {fileID: 7972686340126499235, guid: 4c00d4e527e5ce04dbbb4920cec10370, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2228,6 +2404,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2420,6 +2600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Triple Flower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 635b559c754cc8341b32a152e4059ce9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2441,6 +2625,10 @@ PrefabInstance:
     - target: {fileID: 6104155574624413267, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
       propertyPath: m_Name
       value: Purple Book (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104155574624413267, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6916827040964754665, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2552,6 +2740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RugRectangleLong (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3176573852084882120, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3969229720712637213, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2621,6 +2813,10 @@ PrefabInstance:
     - target: {fileID: 6596774637294519909, guid: 625c63d1d4491964d8bdca1e8140e3c1, type: 3}
       propertyPath: m_Name
       value: flower_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596774637294519909, guid: 625c63d1d4491964d8bdca1e8140e3c1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2765,6 +2961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Book
       objectReference: {fileID: 0}
+    - target: {fileID: 2114531495875037320, guid: 9ded4a2f612997a4ea4eff7e80932e39, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2783,9 +2983,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -2839,6 +3047,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2857,6 +3077,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800184368}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660004
@@ -2905,13 +3133,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim4
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2939,6 +3183,10 @@ PrefabInstance:
     - target: {fileID: 284226068327789853, guid: 68fd4dcfbe5154d4e89043e3df713c11, type: 3}
       propertyPath: m_Name
       value: Blue Book (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 284226068327789853, guid: 68fd4dcfbe5154d4e89043e3df713c11, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 628840073007542183, guid: 68fd4dcfbe5154d4e89043e3df713c11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3001,6 +3249,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3205,7 +3457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297062307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3240,7 +3492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297270343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3277,6 +3529,10 @@ PrefabInstance:
     - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_Name
       value: ShelvesTallA (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6694718407815970693, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_LocalScale.x
@@ -3352,6 +3608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VaseTallBottle
       objectReference: {fileID: 0}
+    - target: {fileID: 1254378079942416724, guid: c77d39865f2b1464480152ac6f2c58f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1883527856440558574, guid: c77d39865f2b1464480152ac6f2c58f1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2784766
@@ -3425,6 +3685,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta6
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -3500,6 +3764,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1645404929}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -3548,13 +3820,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim8
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3582,6 +3870,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3697,6 +3989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Standart Bookshelf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6437274062654146529, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3722,6 +4018,10 @@ PrefabInstance:
     - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_Name
       value: Suelo4x12m
+      objectReference: {fileID: 0}
+    - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3841,6 +4141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 759833800247620209, guid: 0478957e3fecb2e40a8300bd5e8b3fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1264249947410633636, guid: 0478957e3fecb2e40a8300bd5e8b3fb7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3915,6 +4219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RugRectangleLong
       objectReference: {fileID: 0}
+    - target: {fileID: 3176573852084882120, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3969229720712637213, guid: 6176ffddae78aaf4a8890b1580487c20, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3938,7 +4246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 374111830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3975,7 +4283,7 @@ GameObject:
   - component: {fileID: 378645083}
   - component: {fileID: 378645085}
   - component: {fileID: 378645084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TvLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4097,6 +4405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4159,9 +4471,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -4214,6 +4534,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4289,6 +4621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gaming Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 9105635370818261670, guid: 67f2aad6c8f7dea47979d81797fe5da7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4310,6 +4646,10 @@ PrefabInstance:
     - target: {fileID: 6104155574624413267, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
       propertyPath: m_Name
       value: Purple Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104155574624413267, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6916827040964754665, guid: 2bd5455a29123e64287c30781ba4c46b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4372,6 +4712,10 @@ PrefabInstance:
     - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
       propertyPath: m_Name
       value: Nightstand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9106246787774262725, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
       propertyPath: m_LocalScale.x
@@ -4443,6 +4787,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 506248285}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660004
@@ -4491,13 +4843,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim7
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4566,6 +4934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: L-Shaped Desk
       objectReference: {fileID: 0}
+    - target: {fileID: 5545186943235264693, guid: ced3f6d891a29e341bddee5b657dcb5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4587,6 +4959,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -4721,6 +5097,10 @@ PrefabInstance:
       value: 12mWall (4)
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4795,7 +5175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454232013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MesadeComer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4878,6 +5258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo8x6m
       objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 5febc7034a87cd243b2b1e581c557c94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7307118220911121544, guid: 5febc7034a87cd243b2b1e581c557c94, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4901,9 +5285,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468197362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Escenario Luces
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4956,6 +5340,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -5023,9 +5411,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -5078,6 +5474,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5156,6 +5564,10 @@ PrefabInstance:
     - target: {fileID: 2088343256679243690, guid: 29d2ff71ee4088643b56e70ff038b92f, type: 3}
       propertyPath: m_Name
       value: coffee_machine_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088343256679243690, guid: 29d2ff71ee4088643b56e70ff038b92f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5253,6 +5665,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778547825}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.6202116
@@ -5293,9 +5713,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_Name
       value: DoorClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5316,7 +5752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 503830470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5352,7 +5788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506248285}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5429,6 +5865,10 @@ PrefabInstance:
     - target: {fileID: 6437274062654146529, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
       propertyPath: m_Name
       value: Standart Bookshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437274062654146529, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5787,6 +6227,10 @@ PrefabInstance:
       value: Suelo12m
       objectReference: {fileID: 0}
     - target: {fileID: 6680043102897673831, guid: 2b2130f6f7aaf564ab33cc1fd889f528, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 2b2130f6f7aaf564ab33cc1fd889f528, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5812,9 +6256,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -5868,6 +6320,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5894,6 +6358,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta1
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -5969,9 +6437,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -6025,6 +6501,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6046,6 +6534,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -6117,6 +6609,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1093191005}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.085154
@@ -6157,13 +6657,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim2
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6191,6 +6707,10 @@ PrefabInstance:
     - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_Name
       value: ShelvesTallA (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6694718407815970693, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_LocalScale.x
@@ -6264,7 +6784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635540206}
   - component: {fileID: 635540207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Video Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6330,6 +6850,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2038145919}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -6378,13 +6906,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnimFR
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: DoorFR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6412,6 +6956,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
       propertyPath: m_Name
       value: 6mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 297f1b6d25a79bd4e992169a275eea49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6523,6 +7071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VaseSmall
       objectReference: {fileID: 0}
+    - target: {fileID: 5209904417322171226, guid: 866bdbed2037c124c96163a0f79b27f6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6585,6 +7137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo8x6m (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 5febc7034a87cd243b2b1e581c557c94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7307118220911121544, guid: 5febc7034a87cd243b2b1e581c557c94, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6610,6 +7166,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta3
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6680,6 +7240,10 @@ PrefabInstance:
     - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_Name
       value: RugRectangleMedium (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6495630340161587805, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_LocalScale.x
@@ -6973,6 +7537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Bookshelf Small (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6474193119160540935, guid: 70c65ab571624df4786d8004c0a570c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7190,6 +7758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dish_002
       objectReference: {fileID: 0}
+    - target: {fileID: 4219254366163903785, guid: 4dd304aacd53d3c4589956b0fca9a8df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7209,7 +7781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 748538949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7284,6 +7856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: L-Shaped Couch
       objectReference: {fileID: 0}
+    - target: {fileID: 5020720176552149798, guid: b7c1d7bef3c9c8444a9260a8cdc9e891, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5685511726539692444, guid: b7c1d7bef3c9c8444a9260a8cdc9e891, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.1317406
@@ -7343,7 +7919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 773267060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FurnitureFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7424,6 +8000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch
       objectReference: {fileID: 0}
+    - target: {fileID: 6854795606429121349, guid: 5c1b01bd0f7d5ab4b82f4611868cfcaf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7445,6 +8025,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -7650,6 +8234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7719,6 +8307,10 @@ PrefabInstance:
     - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_Name
       value: ShelvesTallA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6694718407815970693, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_LocalScale.x
@@ -7793,6 +8385,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -8251,6 +8847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Standart Wardrobe (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7849786195855456196, guid: 945d4f9099e1e9044897b000007b6a91, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8272,6 +8872,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -8383,6 +8987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Book (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2114531495875037320, guid: 9ded4a2f612997a4ea4eff7e80932e39, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8402,7 +9010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 902799851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Estanteria11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8442,7 +9050,7 @@ GameObject:
   - component: {fileID: 914850670}
   - component: {fileID: 914850672}
   - component: {fileID: 914850671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8604,6 +9212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo8x8m (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7307118220911121544, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -8627,7 +9239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 943190234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8719,6 +9331,10 @@ PrefabInstance:
       value: sofa_001
       objectReference: {fileID: 0}
     - target: {fileID: 8775740971403266423, guid: c12cbdd8c7f58cc4e82747b66b152ca9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775740971403266423, guid: c12cbdd8c7f58cc4e82747b66b152ca9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8805,7 +9421,7 @@ GameObject:
   - component: {fileID: 965321285}
   - component: {fileID: 965321284}
   - component: {fileID: 965321283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8910,6 +9526,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 748538949}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -8958,9 +9582,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: DoorClosed12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9024,6 +9664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Short Nightstand
       objectReference: {fileID: 0}
+    - target: {fileID: 5270983341688224441, guid: 88d126b4de386094c87b9d404e6b833d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9049,6 +9693,10 @@ PrefabInstance:
     - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_Name
       value: SueloR1
+      objectReference: {fileID: 0}
+    - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1665031714663523312, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9111,6 +9759,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -9185,7 +9837,7 @@ GameObject:
   - component: {fileID: 1022094549}
   - component: {fileID: 1022094551}
   - component: {fileID: 1022094550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9307,6 +9959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9417,6 +10073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Bookshelf Small
       objectReference: {fileID: 0}
+    - target: {fileID: 6474193119160540935, guid: 70c65ab571624df4786d8004c0a570c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9436,7 +10096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049395946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9530,7 +10190,7 @@ GameObject:
   - component: {fileID: 1067345133}
   - component: {fileID: 1067345135}
   - component: {fileID: 1067345134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9704,6 +10364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: microwave_oven_001
       objectReference: {fileID: 0}
+    - target: {fileID: 5236796929895147717, guid: 9212441ed0520ab47817284a41f94845, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6029241829527783696, guid: 9212441ed0520ab47817284a41f94845, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9727,7 +10391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070477749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&FloorFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9765,7 +10429,7 @@ GameObject:
   - component: {fileID: 1081831205}
   - component: {fileID: 1081831207}
   - component: {fileID: 1081831206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9962,6 +10626,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1330550110}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -10010,13 +10682,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim9
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10042,7 +10730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093191005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10133,6 +10821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchen_table_001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 917278889609147279, guid: 7ffe462c97c4b684991a6f9472318357, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1709723240021201498, guid: 7ffe462c97c4b684991a6f9472318357, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10185,9 +10877,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -10240,6 +10940,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10306,6 +11018,10 @@ PrefabInstance:
     - target: {fileID: 6437274062654146529, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
       propertyPath: m_Name
       value: Standart Bookshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437274062654146529, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10431,6 +11147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo8x8m (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7307118220911121544, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10453,6 +11173,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049395946}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660002
@@ -10501,9 +11229,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10531,6 +11275,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -10658,6 +11406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: musical_instrument_001
       objectReference: {fileID: 0}
+    - target: {fileID: 873254747532052552, guid: ff8bf27806498b14db60a3c20a21eec2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1665928207271848349, guid: ff8bf27806498b14db60a3c20a21eec2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10741,6 +11493,10 @@ PrefabInstance:
       value: lounge_chair_001
       objectReference: {fileID: 0}
     - target: {fileID: 4237530767371831047, guid: 4c4b2b0935db72a45a61b3a6e86d95bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237530767371831047, guid: 4c4b2b0935db72a45a61b3a6e86d95bf, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10792,9 +11548,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -10847,6 +11611,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10986,6 +11762,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11277,6 +12057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thin Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0766
@@ -11350,7 +12134,7 @@ GameObject:
   - component: {fileID: 1183796133}
   - component: {fileID: 1183796135}
   - component: {fileID: 1183796134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11473,6 +12257,10 @@ PrefabInstance:
       value: 4mWall
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11541,6 +12329,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 1mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -11611,6 +12403,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -11723,6 +12519,10 @@ PrefabInstance:
       value: Short Nightstand
       objectReference: {fileID: 0}
     - target: {fileID: 5270983341688224441, guid: 88d126b4de386094c87b9d404e6b833d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270983341688224441, guid: 88d126b4de386094c87b9d404e6b833d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11777,6 +12577,10 @@ PrefabInstance:
     - target: {fileID: 2796522787247864308, guid: 72cea4de7aef0894c84d3b014858e185, type: 3}
       propertyPath: m_Name
       value: Gaming Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796522787247864308, guid: 72cea4de7aef0894c84d3b014858e185, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3280008129957454670, guid: 72cea4de7aef0894c84d3b014858e185, type: 3}
       propertyPath: m_LocalScale.z
@@ -11847,6 +12651,10 @@ PrefabInstance:
     - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_Name
       value: RugRectangleMedium
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11923,6 +12731,10 @@ PrefabInstance:
       value: 1mWall
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11995,6 +12807,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12106,6 +12922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: closet_001
       objectReference: {fileID: 0}
+    - target: {fileID: 2950561190879039325, guid: f55d7df03694fd244a9b29dcc29c2175, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3743199053723840136, guid: f55d7df03694fd244a9b29dcc29c2175, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12188,6 +13008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tv_wall_001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2216539992114824954, guid: c97a7e3361d4a884ea66a7f03258cdc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12209,7 +13033,7 @@ GameObject:
   - component: {fileID: 1257050624}
   - component: {fileID: 1257050626}
   - component: {fileID: 1257050625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12331,6 +13155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotonPuerta7
       objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -12408,6 +13236,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12566,6 +13398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: toy_001
       objectReference: {fileID: 0}
+    - target: {fileID: 6557717566896455631, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12587,6 +13423,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -12661,6 +13501,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuertaFR
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -12737,7 +13581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330550110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12778,6 +13622,10 @@ PrefabInstance:
     - target: {fileID: 5862214619906347925, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
       propertyPath: m_Name
       value: closet_002 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862214619906347925, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6489992244797294895, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
       propertyPath: m_LocalScale.x
@@ -13047,6 +13895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo8x8m
       objectReference: {fileID: 0}
+    - target: {fileID: 6680043102897673831, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7307118220911121544, guid: 41a1f2ba5147c344fa4608dde334ff58, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13072,6 +13924,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta5
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -13152,6 +14008,10 @@ PrefabInstance:
       value: 12mWall (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13226,7 +14086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1377303013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13453,6 +14313,10 @@ PrefabInstance:
       value: tv_wall_001 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2216539992114824954, guid: c97a7e3361d4a884ea66a7f03258cdc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216539992114824954, guid: c97a7e3361d4a884ea66a7f03258cdc8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13505,7 +14369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403673796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13545,6 +14409,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -13620,6 +14488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Book
       objectReference: {fileID: 0}
+    - target: {fileID: 284226068327789853, guid: 68fd4dcfbe5154d4e89043e3df713c11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 628840073007542183, guid: 68fd4dcfbe5154d4e89043e3df713c11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1933107
@@ -13678,6 +14550,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1377303013}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -13726,13 +14606,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim3
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13762,6 +14658,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 748538949}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.198746
@@ -13802,9 +14706,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
       propertyPath: m_Name
       value: DoorClosed11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 31dd9e6072ed9934f8a37745f9efd90e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13858,6 +14778,10 @@ PrefabInstance:
     - target: {fileID: 7057148730491291160, guid: 1909352e3a186894fbd045ac8fe132b8, type: 3}
       propertyPath: m_Name
       value: drink_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057148730491291160, guid: 1909352e3a186894fbd045ac8fe132b8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7690978067668802722, guid: 1909352e3a186894fbd045ac8fe132b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14062,6 +14986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -14131,6 +15059,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
       propertyPath: m_Name
       value: 1mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 773fba26f28a241498d62a71ddaadb94, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14206,6 +15138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -14276,6 +15212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -14345,6 +15285,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta9
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -14421,7 +15365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495225093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14472,6 +15416,10 @@ PrefabInstance:
     - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
       propertyPath: m_Name
       value: Nightstand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8436424731055617919, guid: 08cb072512500c3479d2f37b12d4d825, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14578,7 +15526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1497169040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14629,7 +15577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498244707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14665,6 +15613,10 @@ PrefabInstance:
     - target: {fileID: 13458662794385779, guid: 04d7a2c18c48996478ccd0fa2f0627f0, type: 3}
       propertyPath: m_Name
       value: dish_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 13458662794385779, guid: 04d7a2c18c48996478ccd0fa2f0627f0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 820781279144477641, guid: 04d7a2c18c48996478ccd0fa2f0627f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -14744,6 +15696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thin Chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0766
@@ -14815,7 +15771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1551152262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14858,6 +15814,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -15064,7 +16024,7 @@ GameObject:
   - component: {fileID: 1561726318}
   - component: {fileID: 1561726320}
   - component: {fileID: 1561726319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15185,7 +16145,7 @@ GameObject:
   - component: {fileID: 1565796121}
   - component: {fileID: 1565796123}
   - component: {fileID: 1565796122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15306,6 +16266,10 @@ PrefabInstance:
     - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_Name
       value: Thin Chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552517019923449362, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2215901504533519528, guid: 3ca427402f0ef1347adc69f0ba78d0bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -15463,6 +16427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dish_001
       objectReference: {fileID: 0}
+    - target: {fileID: 13458662794385779, guid: 04d7a2c18c48996478ccd0fa2f0627f0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 820781279144477641, guid: 04d7a2c18c48996478ccd0fa2f0627f0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.135227
@@ -15585,6 +16553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 759833800247620209, guid: 0478957e3fecb2e40a8300bd5e8b3fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15603,9 +16575,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1551152262}
     m_Modifications:
+    - target: {fileID: 592899677130433913, guid: 6015f705b51ca814683b83a069df4575, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172612319607080597, guid: 6015f705b51ca814683b83a069df4575, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5089573831305844038, guid: 6015f705b51ca814683b83a069df4575, type: 3}
       propertyPath: m_Name
       value: Double Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089573831305844038, guid: 6015f705b51ca814683b83a069df4575, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5614331511658221564, guid: 6015f705b51ca814683b83a069df4575, type: 3}
       propertyPath: m_LocalScale.x
@@ -15680,6 +16664,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta2
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -15811,6 +16799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fridge_001
       objectReference: {fileID: 0}
+    - target: {fileID: 5475051098011276006, guid: a457d02d5bf10c9459386d5931ca3a94, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5835457333726851891, guid: a457d02d5bf10c9459386d5931ca3a94, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -15864,7 +16856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639026513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15904,7 +16896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645404929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15938,9 +16930,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -15993,6 +16993,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16050,6 +17062,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 1mWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -16120,6 +17136,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -16324,6 +17344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShelfWallSmall
       objectReference: {fileID: 0}
+    - target: {fileID: 4034780930492792896, guid: 6fd978a8658d8be488a0ab54165dda6a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4374608554967653114, guid: 6fd978a8658d8be488a0ab54165dda6a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.72981507
@@ -16394,6 +17418,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 374111830}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -16442,13 +17474,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim5
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16476,6 +17524,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -16600,6 +17652,10 @@ PrefabInstance:
       value: coffee_table_001
       objectReference: {fileID: 0}
     - target: {fileID: 6879242674631676303, guid: 9f9cd54077faf65438d05b189cdde7f5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6879242674631676303, guid: 9f9cd54077faf65438d05b189cdde7f5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16629,6 +17685,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16740,6 +17800,10 @@ PrefabInstance:
       value: 12mWall (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16817,6 +17881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4mWall
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -16884,7 +17952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728441510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16960,6 +18028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Bookshelf Small (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6474193119160540935, guid: 70c65ab571624df4786d8004c0a570c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16979,7 +18051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778547825}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17084,6 +18156,10 @@ PrefabInstance:
     - target: {fileID: 1355281140056533860, guid: a9b3dec6c36033744a62441b6a92cd76, type: 3}
       propertyPath: m_Name
       value: toy_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355281140056533860, guid: a9b3dec6c36033744a62441b6a92cd76, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1838943817591124446, guid: a9b3dec6c36033744a62441b6a92cd76, type: 3}
       propertyPath: m_LocalScale.x
@@ -17215,7 +18291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795866522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17313,7 +18389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800184368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Room4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17348,7 +18424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800623739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17416,6 +18492,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta8
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalScale.x
@@ -17498,6 +18578,10 @@ PrefabInstance:
     - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_Name
       value: RugRectangleMedium (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6495630340161587805, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_LocalScale.x
@@ -17604,7 +18688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828337234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17652,6 +18736,10 @@ PrefabInstance:
     - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_Name
       value: Suelo4x12m
+      objectReference: {fileID: 0}
+    - target: {fileID: 869085911249191810, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1665031714663523312, guid: 8c7c6e17b88e4ba418b7fddca6a46cb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17714,6 +18802,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -17786,7 +18878,7 @@ GameObject:
   - component: {fileID: 1848675780}
   - component: {fileID: 1848675779}
   - component: {fileID: 1848675778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17997,6 +19089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: closet_002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862214619906347925, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6489992244797294895, guid: fb10bf7391b6c704ea27ed75d5eee5df, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.1473124
@@ -18098,7 +19194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867804945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18136,7 +19232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1868698954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls&Floor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18175,6 +19271,10 @@ PrefabInstance:
     - target: {fileID: 5160354028314955534, guid: 0eac5f779f169324da987e6e0004aac0, type: 3}
       propertyPath: m_Name
       value: SofaFootRest
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160354028314955534, guid: 0eac5f779f169324da987e6e0004aac0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5536773361369634228, guid: 0eac5f779f169324da987e6e0004aac0, type: 3}
       propertyPath: m_LocalScale.x
@@ -18250,6 +19350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Twin Wardrobe
       objectReference: {fileID: 0}
+    - target: {fileID: 8286149141330179028, guid: 3203d32c7186a84419e35d7ce08429da, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8770056661593549166, guid: 3203d32c7186a84419e35d7ce08429da, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.59117
@@ -18315,6 +19419,10 @@ PrefabInstance:
     - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_Name
       value: ShelvesTallA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315095918279648575, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6694718407815970693, guid: 582abf97ecb4a1d4c8e99e763a493630, type: 3}
       propertyPath: m_LocalScale.x
@@ -18430,6 +19538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Standart Wardrobe
       objectReference: {fileID: 0}
+    - target: {fileID: 7849786195855456196, guid: 945d4f9099e1e9044897b000007b6a91, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18455,6 +19567,10 @@ PrefabInstance:
     - target: {fileID: 3992247911085159402, guid: 9f5e01d181b4aca42913e46cd6c8023d, type: 3}
       propertyPath: m_Name
       value: kitchen_sink_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992247911085159402, guid: 9f5e01d181b4aca42913e46cd6c8023d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4335982371157764432, guid: 9f5e01d181b4aca42913e46cd6c8023d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18570,6 +19686,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: LampTall
       objectReference: {fileID: 0}
+    - target: {fileID: 1768788505996539846, guid: ebc13ed40311b184c98364ffba271c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143742768280229865, guid: ebc13ed40311b184c98364ffba271c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210412766006110055, guid: ebc13ed40311b184c98364ffba271c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289977627886394631, guid: ebc13ed40311b184c98364ffba271c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545996821126183230, guid: ebc13ed40311b184c98364ffba271c6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18595,6 +19731,10 @@ PrefabInstance:
     - target: {fileID: 6075769524634383316, guid: 2343b3a108edf9a49b06659f0928a030, type: 3}
       propertyPath: m_Name
       value: washing_machine_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075769524634383316, guid: 2343b3a108edf9a49b06659f0928a030, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6852975177513937262, guid: 2343b3a108edf9a49b06659f0928a030, type: 3}
       propertyPath: m_LocalScale.x
@@ -18666,9 +19806,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -18722,6 +19870,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18740,6 +19900,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497169040}
     m_Modifications:
+    - target: {fileID: 6539752441235066748, guid: 1189904b73d88054fa88fa5c364c51f3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7104867858373816243, guid: 1189904b73d88054fa88fa5c364c51f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.69497997
@@ -18796,6 +19960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Single Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 7625261572977751305, guid: 1189904b73d88054fa88fa5c364c51f3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18817,6 +19985,10 @@ PrefabInstance:
     - target: {fileID: 401713853753398219, guid: c935566373de4944689c3ab2d7f16480, type: 3}
       propertyPath: m_Name
       value: clothes_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 401713853753398219, guid: c935566373de4944689c3ab2d7f16480, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1069882210575927665, guid: c935566373de4944689c3ab2d7f16480, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18884,6 +20056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12mWall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
       value: 8
@@ -18950,9 +20126,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 902799851}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -19005,6 +20189,18 @@ PrefabInstance:
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19068,6 +20264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Bookshelf Small
       objectReference: {fileID: 0}
+    - target: {fileID: 6474193119160540935, guid: 70c65ab571624df4786d8004c0a570c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19117,9 +20317,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1495225093}
     m_Modifications:
+    - target: {fileID: 399154413768830046, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_Name
       value: Books (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404521983244909897, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3032405436396365811, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -19173,6 +20381,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545719996388316529, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491055227301537931, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982415668864551262, guid: 8062fd9b85c788e418915692eb5c78e3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19194,6 +20414,10 @@ PrefabInstance:
     - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_Name
       value: BotonPuerta4
+      objectReference: {fileID: 0}
+    - target: {fileID: 213286676362045723, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7080336190279061765, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19262,7 +20486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038145919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FinalRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19299,6 +20523,10 @@ PrefabInstance:
     - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_Name
       value: 12mWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724902481939322599, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5397167504815891881, guid: 951f23ad6bda1af4fa880618dc88f3a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -19367,7 +20595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067950760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Estanteria2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19406,7 +20634,7 @@ GameObject:
   - component: {fileID: 2091213776}
   - component: {fileID: 2091213775}
   - component: {fileID: 2091213774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TVDinner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19617,6 +20845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lamp_001
       objectReference: {fileID: 0}
+    - target: {fileID: 8225997399151032839, guid: a47bc71942f460a47ab5fdebb4abd678, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8746920258274549949, guid: a47bc71942f460a47ab5fdebb4abd678, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.112
@@ -19687,6 +20919,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 297270343}
     m_Modifications:
+    - target: {fileID: 2651756647933400279, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588933362674547910, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4891703793264059973, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7660003
@@ -19735,13 +20975,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425873791165614227, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257645641701455621, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: PuertaAnim6
       objectReference: {fileID: 0}
+    - target: {fileID: 6306600205287991087, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
       propertyPath: m_Name
       value: Door6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443876708279959250, guid: 35dc63ae4da5af84c9e35483816f1927, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19769,7 +21025,7 @@ GameObject:
   - component: {fileID: 2136377746}
   - component: {fileID: 2136377748}
   - component: {fileID: 2136377747}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19890,6 +21146,10 @@ PrefabInstance:
     - target: {fileID: 4647283406098476851, guid: 00e7c20b7ef3bcb49a714b8924a5524b, type: 3}
       propertyPath: m_Name
       value: Rectangle Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647283406098476851, guid: 00e7c20b7ef3bcb49a714b8924a5524b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5419421406081414537, guid: 00e7c20b7ef3bcb49a714b8924a5524b, type: 3}
       propertyPath: m_LocalScale.x

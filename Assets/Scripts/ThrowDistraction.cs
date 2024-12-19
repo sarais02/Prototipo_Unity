@@ -6,21 +6,20 @@ public class ThrowDistraction : MonoBehaviour
     [SerializeField] private GameObject distractionPrefab;
     [SerializeField] private float throwForce = 10f;
 
-    private Vector3 initialScale;
-    private Coroutine resetCoroutine;
+    private bool isThrowing = false;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && !isThrowing)
         {
-            Throw();
+            StartCoroutine(ThrowWithDelay());
         }
     }
 
-    private void Throw()
+    private IEnumerator ThrowWithDelay()
     {
-        // Instancia el objeto
+        isThrowing = true;
+        yield return new WaitForSeconds(0.8f); 
         GameObject distraction = Instantiate(distractionPrefab, transform.position + transform.forward, Quaternion.identity);
 
         // Aplica fuerza
@@ -29,5 +28,8 @@ public class ThrowDistraction : MonoBehaviour
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.Impulse);
         }
+
+        yield return new WaitForSeconds(1.35f); //Espera a que la animación acabe
+        isThrowing = false;
     }
 }
