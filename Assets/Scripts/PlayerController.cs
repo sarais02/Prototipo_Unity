@@ -55,42 +55,62 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gm && !gm.IsMenu())
-        {
-            CameraMovement();
+   
+        
+            if (gm && !gm.IsMenu())
+            {
+                // Handle camera movement with horizontal rotation only
+                CameraMovement();
 
-            ScrollScale();
+                // Handle the scaling with the mouse scroll wheel
+                ScrollScale();
+            }
+
+            // Player movement input
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+
+            // Calculate the movement direction based on player input
+            Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+            movementDirection.Normalize();
+
+            // Get the camera's forward and right directions
+            Vector3 forward = playerCamera.transform.forward;
+            Vector3 right = playerCamera.transform.right;
+
+            forward.y = 0;  // Prevent vertical influence from the camera
+            right.y = 0;    // Prevent vertical influence from the camera
+
+            // Calculate the movement direction in world space
+            Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
+            moveDirection.Normalize();
+
+            // Move the player in the calculated direction
+            transform.position += moveDirection * speed * Time.deltaTime;
+
+            // Rotate the player to face the direction of movement
+            if (moveDirection != Vector3.zero)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+        
+
+        void CameraMovement()
+        {
+            // Only use horizontal mouse movement for camera rotation
+            float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
+
+            // Update only the horizontal rotation (Y-axis)
+            currentCameraRotationY += mouseX;
+
+            // Apply the camera rotation around the Y-axis (horizontal)
+            Quaternion rotation = Quaternion.Euler(0, currentCameraRotationY, 0);  // Only horizontal rotation
+            Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);  // Set the camera's position offset from the player
+            playerCamera.transform.position = transform.position + rotation * cameraOffset;  // Position the camera
+            playerCamera.transform.LookAt(transform.position);  // Make the camera always look at the player
         }
 
-        // Movimiento del jugador
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-        movementDirection.Normalize();
-
-        // Obtener la rotación de la cámara para orientar el movimiento
-        Vector3 forward = playerCamera.transform.forward;
-        Vector3 right = playerCamera.transform.right;
-
-        forward.y = 0;  // No queremos que la cámara afecte el movimiento vertical
-        right.y = 0;
-
-        Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
-        moveDirection.Normalize();
-
-        // Mover el jugador en la dirección calculada
-        transform.position += moveDirection * speed * Time.deltaTime;
-        //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-        //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
-        //PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
-
-        // Rotar el jugador para mirar hacia la dirección del movimiento
-        if (moveDirection != Vector3.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        }
 
         // Actualizar animaciones
         if (animator != null)

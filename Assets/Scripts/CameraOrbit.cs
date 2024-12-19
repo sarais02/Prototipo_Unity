@@ -16,19 +16,17 @@ public class CameraOrbit : MonoBehaviour
 
     void Update()
     {
-        // Obtener el movimiento del ratón
+        // Obtener el movimiento del ratón (solo en el eje X para rotación horizontal)
         float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-        // Actualizar la rotación de la cámara en los ejes X e Y
+        // Solo actualizamos la rotación horizontal (Y)
         currentRotationY += mouseX;  // Rotación horizontal (alrededor del eje Y)
-        currentRotationX -= mouseY;  // Rotación vertical (alrededor del eje X)
 
-        // Limitar la rotación vertical para evitar que la cámara se voltee completamente
-        currentRotationX = Mathf.Clamp(currentRotationX, minYAngle, maxYAngle);
+        // No actualizamos la rotación en el eje X (evita rotación vertical)
+        // currentRotationX -= mouseY;  // Esta línea se elimina para evitar la rotación vertical
 
-        // Calcular la rotación y la posición de la cámara
-        Quaternion rotation = Quaternion.Euler(currentRotationX, currentRotationY, 0);
+        // Calcular la rotación y la posición de la cámara (sin rotación vertical)
+        Quaternion rotation = Quaternion.Euler(0, currentRotationY, 0);  // Solo rotación horizontal (alrededor del eje Y)
         Vector3 targetPosition = player.position - rotation * Vector3.forward * distance;
         targetPosition.y = player.position.y + height;
 
