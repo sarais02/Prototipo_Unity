@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class PauseSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] GameObject pauseMenu = null;
     bool isPaused;
+
+    void Start()
+    {
+        Time.timeScale = 1;
+        isPaused = false;
+    }
+
+
     void Update()
     {
-        isPaused = false;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused == false)
