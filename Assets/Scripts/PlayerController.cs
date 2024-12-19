@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 maxScale = new Vector3(5f, 5f, 5f);  // Escala máxima permitida
     [SerializeField] private float time = 3f;
 
-    GameManager gm;
+    private GameManager gm;
     public Vector3 size;
     private Vector3 initialScale;
 
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gm=GameManager.GetInstance();
+        gm = GameManager.GetInstance();
         initialScale = transform.localScale;
         initialPos = transform.position;
         animator = GetComponent<Animator>();
@@ -42,85 +42,67 @@ public class PlayerController : MonoBehaviour
         {
             playerCamera = Camera.main;  // Si no se asigna, buscar la cámara principal
         }
-        
-        //Vector3 savedPos = new Vector3(
-        //    PlayerPrefs.GetFloat("PlayerPosX"),
-        //    PlayerPrefs.GetFloat("PlayerPosY"),
-        //    PlayerPrefs.GetFloat("PlayerPosZ"));
-
-        //if(savedPos != Vector3.zero)
-        //    transform.position = savedPos;
     }
 
     // Update is called once per frame
     void Update()
     {
-   
-        
-            if (gm && !gm.IsMenu())
-            {
-                // Handle camera movement with horizontal rotation only
-                CameraMovement();
-
-                // Handle the scaling with the mouse scroll wheel
-                ScrollScale();
-            }
-
-            // Player movement input
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
-
-            // Calculate the movement direction based on player input
-            Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-            movementDirection.Normalize();
-
-            // Get the camera's forward and right directions
-            Vector3 forward = playerCamera.transform.forward;
-            Vector3 right = playerCamera.transform.right;
-
-            forward.y = 0;  // Prevent vertical influence from the camera
-            right.y = 0;    // Prevent vertical influence from the camera
-
-            // Calculate the movement direction in world space
-            Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
-            moveDirection.Normalize();
-
-            // Move the player in the calculated direction
-            transform.position += moveDirection * speed * Time.deltaTime;
-
-            // Rotate the player to face the direction of movement
-            if (moveDirection != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            }
-        
-
-        void CameraMovement()
+        if (gm && !gm.IsMenu())
         {
-            // Only use horizontal mouse movement for camera rotation
-            float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
+            // Handle camera movement
+            CameraMovement();
 
-            // Update only the horizontal rotation (Y-axis)
-            currentCameraRotationY += mouseX;
-
-            // Apply the camera rotation around the Y-axis (horizontal)
-            Quaternion rotation = Quaternion.Euler(0, currentCameraRotationY, 0);  // Only horizontal rotation
-            Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);  // Set the camera's position offset from the player
-            playerCamera.transform.position = transform.position + rotation * cameraOffset;  // Position the camera
-            playerCamera.transform.LookAt(transform.position);  // Make the camera always look at the player
+            // Handle the scaling with the mouse scroll wheel
+            ScrollScale();
         }
 
+        // Player movement input
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        // Actualizar animaciones
+        // Calculate the movement direction based on player input
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        movementDirection.Normalize();
+
+        // Get the camera's forward and right directions
+        Vector3 forward = playerCamera.transform.forward;
+        Vector3 right = playerCamera.transform.right;
+
+        forward.y = 0;  // Prevent vertical influence from the camera
+        right.y = 0;    // Prevent vertical influence from the camera
+
+        // Calculate the movement direction in world space
+        Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
+        moveDirection.Normalize();
+
+        // Move the player in the calculated direction
+        transform.position += moveDirection * speed * Time.deltaTime;
+
+        // Rotate the player to face the direction of movement
+        if (moveDirection != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+
+        // Update animations
         if (animator != null)
         {
             animator.SetFloat("XSpeed", horizontalInput);  // Movimiento horizontal
             animator.SetFloat("YSpeed", verticalInput);    // Movimiento vertical
         }
 
+        // Check if "F" key is pressed to trigger the throw animation
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (animator != null)
+            {
+                animator.SetTrigger("Throw");  // Activate the "Throw" trigger
+            }
+        }
     }
-    
+
+    // Handles the camera movement and rotation
     private void CameraMovement()
     {
         // Control de rotación de la cámara con el ratón
@@ -138,6 +120,8 @@ public class PlayerController : MonoBehaviour
         playerCamera.transform.position = transform.position + rotation * cameraOffset;
         playerCamera.transform.LookAt(transform.position);
     }
+
+    // Handles scaling with the mouse scroll wheel
     private void ScrollScale()
     {
         // Escalado con la rueda del ratón
@@ -148,8 +132,7 @@ public class PlayerController : MonoBehaviour
             newScale = new Vector3(
                 Mathf.Clamp(newScale.x, minScale.x, maxScale.x),
                 Mathf.Clamp(newScale.y, minScale.y, maxScale.y),
-                Mathf.Clamp(newScale.z, minScale.z, maxScale.z)
-            );
+                Mathf.Clamp(newScale.z, minScale.z, maxScale.z));
 
             transform.localScale = newScale;
 
@@ -161,11 +144,13 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    // Coroutine to reset the scale after a delay
     IEnumerator ResetScaleAfterDelay()
     {
         while (Time.time < timeSinceLastScaleChange + time)
         {
-            yield return null; // Espera hasta que se cumpla el tiempo de retraso
+            yield return null; // Wait until the delay time has passed
         }
 
         while (Vector3.Distance(transform.localScale, initialScale) > 0.01f)
@@ -178,6 +163,7 @@ public class PlayerController : MonoBehaviour
         isScaling = false;
     }
 
+    // Detects collisions with the "Water" object and respawns the player
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Water"))
@@ -185,6 +171,8 @@ public class PlayerController : MonoBehaviour
             Respawn();
         }
     }
+
+    // Respawns the player to their initial position
     private void Respawn()
     {
         Debug.Log("Respawn");
