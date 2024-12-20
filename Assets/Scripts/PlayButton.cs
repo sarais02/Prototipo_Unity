@@ -20,7 +20,7 @@ public class PlayButton : MonoBehaviour
         }
         else
         {
-            gm.LoadLevel("EscenaNiveles");
+            gm.LoadLevel("Cabaña");
             //gameplayManager.LoadLevel("EscenaNiveles");
         }
     }

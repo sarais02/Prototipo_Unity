@@ -2132,7 +2132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73f46a68a116114a842b63101cd7255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorButton: {fileID: 1484689265}
+  doorButton: {fileID: 0}
 --- !u!1001 &1290804345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2813,17 +2813,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7523755395826051790, guid: 5e6caba34986f27479f0f6dc6f60f6a5, type: 3}
   m_PrefabInstance: {fileID: 1433082938}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1484689265 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9182300882020574926, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
-  m_PrefabInstance: {fileID: 64837545}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1217d3a508112614899262b89ea90abe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1529323915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,7 +2829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1529323916
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3656,11 +3645,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.84
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.84
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3668,7 +3657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.371048
+      value: 26.371
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalPosition.z

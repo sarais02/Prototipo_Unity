@@ -87,4 +87,9 @@ public class PressPlatform : MonoBehaviour
             opendoor = false;
          }       
     }
+
+    public bool IsDoorOpen()
+    {
+        return opendoor;
+    }
 }

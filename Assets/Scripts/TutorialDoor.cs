@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TutorialDoor : MonoBehaviour
 {
-    [SerializeField] PressButton doorButton;
+    [SerializeField] PressPlatform doorButton;
 
     GameManager gm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,7 +19,7 @@ public class TutorialDoor : MonoBehaviour
             gm.SetTutorial(false);
             PlayerPrefs.SetInt("IsTutorial", 0);
             PlayerPrefs.Save();
-            gm.LoadLevel("EscenaNiveles");
+            gm.LoadLevel("Cabaña");
             //gm.LoadLevel("Diego");
         }
     }
