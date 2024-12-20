@@ -188,6 +188,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d9d606b087d074a9df2e53fe39aa65, type: 3}
+--- !u!114 &209862677 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2943956308743028560, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
+  m_PrefabInstance: {fileID: 2144230055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702e685843946d3469fa3f1138190651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &215866702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1498041528017854, guid: 0ba258545da721e488ecb71ffd143b6f, type: 3}
@@ -2132,7 +2143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73f46a68a116114a842b63101cd7255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorButton: {fileID: 0}
+  doorButton: {fileID: 209862677}
 --- !u!1001 &1290804345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3645,11 +3656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8678023764533410725, guid: cb72e895e336ee14b9bf9208a7b363a8, type: 3}
       propertyPath: m_LocalPosition.x
