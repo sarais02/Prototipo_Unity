@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.0025, z: 0.6}
+  m_LocalScale: {x: 1, y: 0.0025, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8678023764533410725}
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b2be53fe7026a8d4bb95d085506e07c7, type: 2}
+  - {fileID: 2100000, guid: 7f445db9db17cfe4aa4cd758549dd6dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,7 +117,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 55559ecb0b2894f408830cedc9317911, type: 3}
   m_Resource: {fileID: 8300000, guid: 55559ecb0b2894f408830cedc9317911, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -251,7 +251,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.0010000169, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.0025, z: 0.75}
+  m_LocalScale: {x: 1.15, y: 0.0025, z: 1.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8678023764533410725}

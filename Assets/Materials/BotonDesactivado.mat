@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BotonColor
+  m_Name: BotonDesactivado
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -131,7 +131,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.8867924, g: 0, b: 0.37119403, a: 1}
     - _Color: {r: 0.8867924, g: 0, b: 0.371194, a: 1}
-    - _EmissionColor: {r: 52.729557, g: 3.150498, b: 3.150498, a: 1}
+    - _EmissionColor: {r: 13.182387, g: 0.78762436, b: 0.78762436, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
