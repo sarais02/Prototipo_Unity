@@ -67,8 +67,8 @@ public class PressPlatform : MonoBehaviour
         Debug.Log("Chequeando Tamaño...");
         float sizeplayer = playerobj.transform.lossyScale.x; 
         float sizepulsador = pulsobj.transform.lossyScale.x;
-        Debug.Log(sizeplayer);
-        Debug.Log(sizepulsador);
+        Debug.Log("Jugador " + sizeplayer + " Boton "+ sizepulsador);
+       
         if ((Mathf.Abs(sizeplayer - sizepulsador) < 0.1f) && !opendoor) {
             objRenderer.material = correctMaterial;
             doorAnimator.SetTrigger("Door_Open");
@@ -80,12 +80,12 @@ public class PressPlatform : MonoBehaviour
             Debug.Log("Puerta Abierta");
             opendoor = true;
         }
-        else if (!opendoor) {
-            // Si no coinciden los tamaños y la puerta no está abierta, permanece cerrada
-            Debug.Log("No son del mismo tamaño...");
-            Debug.Log("Puerta Cerrada!");
-            opendoor = false;
-         }       
+        //else if (!opendoor) {
+        //    // Si no coinciden los tamaños y la puerta no está abierta, permanece cerrada
+        //    Debug.Log("No son del mismo tamaño...");
+        //    Debug.Log("Puerta Cerrada!");
+        //    opendoor = false;
+        //}       
     }
 
     public bool IsDoorOpen()
