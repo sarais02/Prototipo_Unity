@@ -37,11 +37,6 @@ public class PlayerController : MonoBehaviour
         initialPos = transform.position;
         animator = GetComponent<Animator>();
         size = GetComponent<MeshRenderer>().bounds.size;
-
-        if (playerCamera == null)
-        {
-            playerCamera = Camera.main;  // Si no se asigna, buscar la cámara principal
-        }
     }
 
     // Update is called once per frame
@@ -49,7 +44,6 @@ public class PlayerController : MonoBehaviour
     {
         if (gm && !gm.IsMenu())
         {
-            CameraMovement();
             ScrollScale();
         }
 
@@ -96,28 +90,6 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Throw");  // Activate the "Throw" trigger
             }
         }
-    }
-
-    // Handles the camera movement and rotation
-    private void CameraMovement()
-    {
-
-        // Control de rotación de la cámara con el ratón
-        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
-        if (gm.IsTutorial())
-        {
-            float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
-            currentCameraRotationX -= mouseY;
-        }
-        currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -50f, 50f);
-
-        currentCameraRotationY += mouseX;
-
-        // Aplicar rotación a la cámara
-        Quaternion rotation = Quaternion.Euler(currentCameraRotationX, currentCameraRotationY, 0);
-        Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);
-        playerCamera.transform.position = transform.position + rotation * cameraOffset;
-        playerCamera.transform.LookAt(transform.position);
     }
 
     // Handles scaling with the mouse scroll wheel
