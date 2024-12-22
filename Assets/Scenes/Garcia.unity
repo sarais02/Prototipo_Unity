@@ -2950,12 +2950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 923323195}
-  distance: 1
-  height: 2
-  rotationSpeed: 5
-  followSpeed: 10
-  maxYAngle: 70
-  minYAngle: -70
 --- !u!114 &1311654001
 MonoBehaviour:
   m_ObjectHideFlags: 0
