@@ -101,11 +101,14 @@ public class PlayerController : MonoBehaviour
     // Handles the camera movement and rotation
     private void CameraMovement()
     {
+
         // Control de rotación de la cámara con el ratón
         float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
-
-        currentCameraRotationX -= mouseY;
+        if (gm.IsTutorial())
+        {
+            float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
+            currentCameraRotationX -= mouseY;
+        }
         currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -50f, 50f);
 
         currentCameraRotationY += mouseX;
