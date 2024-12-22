@@ -70,11 +70,6 @@ public class EnemyAI : MonoBehaviour
         DetectPlayer();
         if (playerDetected)
         {
-            //Sonido
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(clip);
-            }
             player.GetComponent<PlayerRespawn>()?.KillPlayer();            
         }
         if (!isInvestigating)
@@ -266,6 +261,11 @@ public class EnemyAI : MonoBehaviour
                 // Verifica si hay algún obstáculo entre el enemigo y el jugador
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask))
                 {
+                    //Sonido
+                    if (!audioSource.isPlaying)
+                    {
+                        audioSource.PlayOneShot(clip);
+                    }
                     playerDetected = true;
                     Debug.Log("Player detected!");
                     break;
