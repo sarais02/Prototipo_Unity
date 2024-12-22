@@ -2975,7 +2975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1285763145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5579,17 +5579,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908271750}
   m_CullTransparentMesh: 1
---- !u!114 &1976464880 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
-  m_PrefabInstance: {fileID: 1902496930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1fa9f71ab1f01a4d91fed097f3292ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1981100838
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,7 +6338,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1976464880}
+      - m_Target: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
