@@ -4,6 +4,7 @@ public class PlayButton : MonoBehaviour
 {
     GameManager gm;
     [SerializeField] UIManager ui;
+
     private void Start()
     {
         gm = GameManager.GetInstance();
@@ -12,16 +13,17 @@ public class PlayButton : MonoBehaviour
     {
         //Quito el menu de la ui
         gm.SetMenu(false);
-       
+
         if (gm.IsTutorial()) //Si es el tutorial
         {
             //Mostrar texto de tutorial
+            Cursor.lockState = CursorLockMode.Locked; // Bloquear el cursor al inicio
+            Cursor.visible = false;                  // Ocultar el cursor al inicio
             ui.ShowTargetObject();
         }
         else
         {
             gm.LoadLevel("Cabaña");
-            //gameplayManager.LoadLevel("EscenaNiveles");
         }
     }
 }

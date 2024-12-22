@@ -57,9 +57,12 @@ public class GameManager : MonoBehaviour
             GameObject.Find("GameManager").GetComponent<GameManager>().SetMenu(true);
             SetMenu(true);
         }
+        else if (sceneName == "Cabaña")
+        {
+            Cursor.lockState = CursorLockMode.Locked; // Bloquear el cursor al inicio
+            Cursor.visible = false;                  // Ocultar el cursor al inicio
+        }
         SceneManager.LoadScene(sceneName);
-        Time.timeScale = 0;
-        
     }
     public void Exit()
     {
