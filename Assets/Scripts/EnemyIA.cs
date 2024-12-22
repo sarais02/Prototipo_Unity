@@ -123,9 +123,7 @@ public class EnemyAI : MonoBehaviour
 
     private void LookAndRest()
     {
-        // Oscila entre -135 y -215 grados
-        float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 80f) - 215f;
-        transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
+        //Descansando
     }
 
     public void Investigate(Vector3 distractionPosition) //Solo es public para llamarlo desde Distraction
@@ -145,10 +143,6 @@ public class EnemyAI : MonoBehaviour
 
                 case EnemyType.Rotate360:
                     StartCoroutine(RotateTowardsDirection(distractionPosition));
-                    break;
-                    
-                case EnemyType.LookAndRest:
-                    StartCoroutine(InvestigationLookAndRest());
                     break;
             }
         }
@@ -184,11 +178,6 @@ public class EnemyAI : MonoBehaviour
         isInvestigating = false;
         animator.SetBool("Distraction", false);
         currentWaypoint = waypoints[currentWaypointIndex];
-    }
-
-    private IEnumerator InvestigationLookAndRest()
-    {
-        yield return new WaitForSeconds(lookDuration);
     }
 
     private IEnumerator RotateTowardsDirection(Vector3 position)

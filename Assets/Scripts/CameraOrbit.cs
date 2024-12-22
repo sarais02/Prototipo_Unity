@@ -2,18 +2,25 @@ using UnityEngine;
 
 public class CameraOrbit : MonoBehaviour
 {
-    public Transform player;            // Referencia al jugador
-    public float distance = 5f;         // Distancia desde la cámara al jugador
-    public float height = 2f;           // Altura de la cámara respecto al jugador
-    public float rotationSpeed = 5f;    // Velocidad de rotación de la cámara
-    public float followSpeed = 10f;     // Velocidad con la que la cámara sigue al jugador
+    [SerializeField] private Transform player;            // Referencia al jugador
+    [SerializeField] private float distance = 5f;         // Distancia desde la cámara al jugador
+    [SerializeField] private float height = 2f;           // Altura de la cámara respecto al jugador
+    [SerializeField] private float rotationSpeed = 5f;    // Velocidad de rotación de la cámara
+    [SerializeField] private float followSpeed = 10f;     // Velocidad con la que la cámara sigue al jugador
 
     private float currentRotationX = 0f;  // Rotación de la cámara alrededor del eje X (vertical)
     private float currentRotationY = 0f;  // Rotación de la cámara alrededor del eje Y (horizontal)
 
-    public float maxYAngle = 80f;   // Ángulo máximo de rotación vertical (previene que la cámara se voltee)
-    public float minYAngle = -80f;  // Ángulo mínimo de rotación vertical
+    [SerializeField] private float maxYAngle = 80f;   // Ángulo máximo de rotación vertical (previene que la cámara se voltee)
+    [SerializeField] private float minYAngle = -80f;  // Ángulo mínimo de rotación vertical
 
+    void Start()
+    {
+        Quaternion cameraRotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
+        Vector3 forward = cameraRotation * Vector3.forward;
+        Vector3 right = cameraRotation * Vector3.right;
+
+    }
     void Update()
     {
         // Obtener el movimiento del ratón (solo en el eje X para rotación horizontal)

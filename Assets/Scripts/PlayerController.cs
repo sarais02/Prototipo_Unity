@@ -49,41 +49,37 @@ public class PlayerController : MonoBehaviour
     {
         if (gm && !gm.IsMenu())
         {
-            // Handle camera movement
             CameraMovement();
-
-            // Handle the scaling with the mouse scroll wheel
             ScrollScale();
         }
 
-        // Player movement input
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Calculate the movement direction based on player input
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-        movementDirection.Normalize();
-
-        // Get the camera's forward and right directions
         Vector3 forward = playerCamera.transform.forward;
         Vector3 right = playerCamera.transform.right;
 
-        forward.y = 0;  // Prevent vertical influence from the camera
-        right.y = 0;    // Prevent vertical influence from the camera
+        forward.y = 0;
+        right.y = 0;
 
-        // Calculate the movement direction in world space
+        forward.Normalize();
+        right.Normalize();
+
         Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
-        moveDirection.Normalize();
 
-        // Move the player in the calculated direction
+        if (moveDirection.magnitude > 0.01f)
+        {
+            moveDirection.Normalize();
+        }
+
         transform.position += moveDirection * speed * Time.deltaTime;
 
-        // Rotate the player to face the direction of movement
         if (moveDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
+
 
         // Update animations
         if (animator != null)
