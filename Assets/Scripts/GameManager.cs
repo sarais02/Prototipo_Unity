@@ -24,15 +24,16 @@ public class GameManager : MonoBehaviour
         }
 
         if (!PlayerPrefs.HasKey("IsTutorial")) // Si no existe, establece un valor predeterminado
-        { 
+        {
             PlayerPrefs.SetInt("IsTutorial", 1); // 1 para true, 0 para false
             PlayerPrefs.Save(); // Guarda los cambios
         }
-
+       
         // Obtener el valor de "IsTutorial"
         int i = PlayerPrefs.GetInt("IsTutorial");
         if (i == 1) tutorial = true;
         else tutorial = false;
+        //tutorial = true;
         menu = true;
     }
 
