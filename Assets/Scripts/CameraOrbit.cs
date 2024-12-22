@@ -7,6 +7,7 @@ public class CameraOrbit : MonoBehaviour
     [SerializeField] float cameraDistance = 5f; // Distancia de la cámara desde el jugador
 
     [SerializeField] float cameraHeight = 10f; // Altura de la cámara con respecto al jugador
+    [SerializeField] private PauseSystem pauseMenu;
     private GameManager gm;
     private float currentCameraRotationX = 0f;
     private float currentCameraRotationY = 0f;
@@ -22,8 +23,7 @@ public class CameraOrbit : MonoBehaviour
 
     void Update()
     {
-        if (gm && !gm.IsMenu())
-            CameraMovement();
+        if (gm && !gm.IsMenu()) CameraMovement();
         // Hacer que la cámara siempre mire al jugador
         //transform.LookAt(player.position);
     }
@@ -43,9 +43,12 @@ public class CameraOrbit : MonoBehaviour
         currentCameraRotationY += mouseX;
 
         // Aplicar rotación a la cámara
-        Quaternion rotation = Quaternion.Euler(currentCameraRotationX, currentCameraRotationY, 0);
-        Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);
-        transform.position = player.transform.position + rotation * cameraOffset;
-        transform.LookAt(player.transform.position);
+        if (!pauseMenu.IsPaused())
+        {
+            Quaternion rotation = Quaternion.Euler(currentCameraRotationX, currentCameraRotationY, 0);
+            Vector3 cameraOffset = new Vector3(0, cameraHeight, -cameraDistance);
+            transform.position = player.transform.position + rotation * cameraOffset;
+            transform.LookAt(player.transform.position);
+        }
     }
 }

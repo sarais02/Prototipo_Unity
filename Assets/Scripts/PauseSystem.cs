@@ -36,6 +36,8 @@ public class PauseSystem : MonoBehaviour
         }
     }
 
+    public bool IsPaused() { return isPaused; }
+
     public void QuitPauseMenu()
     {
         // Desactivar pausa

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Garcia.unity
+    guid: a45af88229317b04cb57ef69c7504761
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 5e503d0751949ee4abbb0a6c98b472d8
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaNiveles.unity
     guid: 370c7a119326e6543870fb1fa32fc4b2
-  - enabled: 1
-    path: Assets/Scenes/Garcia.unity
-    guid: a45af88229317b04cb57ef69c7504761
   - enabled: 1
     path: "Assets/Scenes/Caba\xF1a.unity"
     guid: baa1dabf02217b94ea8b51b664864a66

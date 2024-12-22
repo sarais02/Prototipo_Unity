@@ -18580,6 +18580,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 693224923}
+  cameraRotationSpeed: 5
+  cameraDistance: 2
+  cameraHeight: 5
+  pauseMenu: {fileID: 1169760320}
 --- !u!1001 &1451514466
 PrefabInstance:
   m_ObjectHideFlags: 0
