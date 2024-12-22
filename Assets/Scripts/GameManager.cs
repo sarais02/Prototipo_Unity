@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] bool tutorial = true;
     [SerializeField] bool menu = true;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -36,11 +37,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (menu) Time.timeScale = 0;
-        else Time.timeScale = 1;
-    }
+
     public bool IsTutorial() { return tutorial; }
     public void SetTutorial(bool t) { tutorial = t; }
 
@@ -54,8 +51,15 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
-        if (sceneName == "Garcia") SetMenu(true);
+        
+        if (sceneName == "Garcia") 
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().SetMenu(true);
+            SetMenu(true);
+        }
         SceneManager.LoadScene(sceneName);
+        Time.timeScale = 0;
+        
     }
     public void Exit()
     {

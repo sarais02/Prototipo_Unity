@@ -7417,18 +7417,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5917195599134219611, guid: 7abc5df1f075a844e93c14e4a85be936, type: 3}
   m_PrefabInstance: {fileID: 518135247}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &521143430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d96c11972cdf34a80ed42cedd97616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &523457541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8286149141330179028, guid: 3203d32c7186a84419e35d7ce08429da, type: 3}
@@ -15113,8 +15101,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521143430}
-        m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
+      - m_Target: {fileID: 1297867553}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -16989,6 +16977,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.30261967, y: 0.37673315, z: 0.59015983}
   m_Center: {x: -0.00046233085, y: 0.18789035, z: -0.007496252}
+--- !u!114 &1297867553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
+  m_PrefabInstance: {fileID: 1055279328}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fa9f71ab1f01a4d91fed097f3292ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1317630213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17672,8 +17671,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521143430}
-        m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
+      - m_Target: {fileID: 2977712763494063428, guid: 32391df44084f7747a728ddfcb030f05, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
@@ -17681,7 +17680,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: Garcia
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1475469208}
@@ -18580,12 +18579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 693224923}
-  distance: 4
-  height: 2
-  rotationSpeed: 5
-  followSpeed: 10
-  maxYAngle: 80
-  minYAngle: -80
 --- !u!1001 &1451514466
 PrefabInstance:
   m_ObjectHideFlags: 0

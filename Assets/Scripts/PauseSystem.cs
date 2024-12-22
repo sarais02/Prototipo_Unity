@@ -3,17 +3,20 @@ using UnityEngine;
 public class PauseSystem : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu = null;
-    bool isPaused;
-
+    public bool isPaused;
+    GameManager gamemanager;
     void Start()
     {
-        Time.timeScale = 1;
         isPaused = false;
+        gamemanager = GameManager.GetInstance();
     }
 
 
     void Update()
     {
+        if (gamemanager.IsMenu() || isPaused) Time.timeScale = 0;
+        else Time.timeScale = 1;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused == false)
