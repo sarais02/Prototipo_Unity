@@ -5,6 +5,8 @@ public class EnemyAI : MonoBehaviour
 {
     // Animator
     private Animator animator;
+    private AudioSource audioSource;
+    private AudioClip clip;
 
     // Enumeración para los tipos de enemigos
     public enum EnemyType
@@ -51,6 +53,12 @@ public class EnemyAI : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+        audioSource.volume = 0.1f;
+        clip = Resources.Load<AudioClip>("jump-scare-sound-2-82831");
+        
+        
+        
 
         // Si hay waypoints, selecciona el primero
         if (waypoints.Length > 0)
@@ -63,7 +71,11 @@ public class EnemyAI : MonoBehaviour
         if (playerDetected)
         {
             //Sonido
-            player.GetComponent<PlayerRespawn>()?.KillPlayer();
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(clip);
+            }
+            player.GetComponent<PlayerRespawn>()?.KillPlayer();            
         }
         if (!isInvestigating)
         {
