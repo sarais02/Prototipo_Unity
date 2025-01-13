@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float patrolSpeed;
     [SerializeField] private float lookDuration; // Tiempo mirando para LookAndRest
     [SerializeField] private float restDuration; // Tiempo descansando para LookAndRest
-    //[SerializeField] private float patrollingTurningSpeed; // Velocidad de giro patruyando
+    [SerializeField] private Transform visionCone; 
 
     [SerializeField] private float investigationSpeed;
     [SerializeField] private float investigationTime;
@@ -100,7 +100,7 @@ public class EnemyAI : MonoBehaviour
     {
         // Oscila entre -135 y -45 grados
         float rotationAngle = Mathf.PingPong(Time.time * rotationSpeed, 90f) - 135f;
-        transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
+        visionCone.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
     }
 
 
