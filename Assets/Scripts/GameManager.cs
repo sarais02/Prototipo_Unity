@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("IsTutorial", 1); // 1 para true, 0 para false
             PlayerPrefs.Save(); // Guarda los cambios
         }
-       
+        
         // Obtener el valor de "IsTutorial"
         int i = PlayerPrefs.GetInt("IsTutorial");
         if (i == 1) tutorial = true;
