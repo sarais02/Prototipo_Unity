@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water_MAT
-  m_Shader: {fileID: -6465566751694194690, guid: e805127ee24b6da4baac8e27764adce0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 7eea8283bd3535240be227c0ed6a80c5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -95,6 +95,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_3A4931B2: 5
+    - Vector1_A9532B28: 1
+    - Vector1_F1E786B1: 5
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -107,17 +110,33 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Displacement_Multiplier: 1
+    - _Distance: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EdgeCutoff: 0
+    - _EdgeScale: 0
+    - _EdgeSpeed: 1
+    - _Edge_Amount: 8.93
+    - _Edge_Cutoff: 0.8
+    - _Edge_Scale: 43.32
+    - _Edge_Speed: 2.9
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _Normal_Strength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Refraction_Scale: 87.3
+    - _Refraction_Speed: 0.7
+    - _Refraction_Strength: 0.0047
+    - _Ripple_Density: 100
+    - _Ripple_Slimness: 5
     - _Scale: 50
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -125,14 +144,21 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _Water_Tiling_Speed: 1
     - _WaveHeight: 0.05
     - _WaveSpeed: 0.05
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Vector2_CFDAA394: {r: 0.5, g: 0.01, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Deep_Water_Color: {r: 0, g: 0.7137255, b: 0.8313726, a: 0}
+    - _Edge_Color: {r: 0.79622644, g: 0.79622644, b: 0.79622644, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Radial_Shear: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Ripple_Color: {r: 0, g: 0.5441127, b: 1, a: 0}
+    - _Shallow_Water_Color: {r: 0.4941176, g: 0.9921569, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
