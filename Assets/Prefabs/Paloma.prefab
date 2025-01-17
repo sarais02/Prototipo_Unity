@@ -648,7 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleSpeed: 0.2
   resetSpeed: 8
-  minScale: {x: 0.1, y: 0.1, z: 0.1}
+  minScale: {x: 0.4, y: 0.4, z: 0.4}
   maxScale: {x: 5, y: 5, z: 5}
   time: 3
   size: {x: 0, y: 0, z: 0}
@@ -1139,12 +1139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5763062971096968541}
-  distance: 3
-  height: 2
-  rotationSpeed: 5
-  followSpeed: 10
-  maxYAngle: 80
-  minYAngle: -80
+  cameraRotationSpeed: 5
+  cameraDistance: 5
+  cameraHeight: 10
+  pauseMenu: {fileID: 0}
 --- !u!1 &6241906592265283616
 GameObject:
   m_ObjectHideFlags: 0
