@@ -7,6 +7,11 @@ public class Distraction : MonoBehaviour
     [SerializeField] private float investigationTime;
     [SerializeField] private Transform auxTransform;
 
+    [SerializeField] private Material material;
+    private float dissolveStrength = 0f;
+    public float speed = 1f; // Velocidad de disolución
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Ground"))
@@ -14,6 +19,31 @@ public class Distraction : MonoBehaviour
             TriggerDistraction();
         }
     }
+    void Start()
+    {
+        Renderer renderer = GetComponent<Renderer>();
+        StartCoroutine(StartDissolveAfterDelay(2.5f));
+        if (renderer != null)
+        {
+            material = renderer.material; 
+        }
+    }
+
+    IEnumerator StartDissolveAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); 
+        Destroy(gameObject, 1f);
+        while (dissolveStrength < 1)
+        {
+            dissolveStrength = Mathf.Lerp(dissolveStrength, 1, Time.deltaTime * speed);
+            material.SetFloat("_DissolveStrength", dissolveStrength);
+            yield return null;
+        }
+
+        material.SetFloat("_DissolveStrength", 1); 
+    }
+
+
 
     void TriggerDistraction()
     {
@@ -30,7 +60,7 @@ public class Distraction : MonoBehaviour
                 }
             }
         }
-        Destroy(gameObject, 2.5f);
+        
     }
 
     private void OnDrawGizmosSelected()
