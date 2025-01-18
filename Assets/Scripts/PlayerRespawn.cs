@@ -4,12 +4,12 @@ public class PlayerRespawn : MonoBehaviour
 {
     private bool isDead = false;
 
-    public void KillPlayer()
+    public void KillPlayer(float time)
     {
         if (isDead) return;
         isDead = true;
         Debug.Log("Jugador ha muerto");
-        Invoke(nameof(Respawn), 2f); // 2 segundos de retraso antes del respawn
+        Invoke(nameof(Respawn), time);
     }
 
     public void Respawn()

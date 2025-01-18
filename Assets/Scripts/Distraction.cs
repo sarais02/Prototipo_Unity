@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
 
 public class Distraction : MonoBehaviour
@@ -11,6 +12,7 @@ public class Distraction : MonoBehaviour
     private float dissolveStrength = 0f;
     public float speed = 1f; // Velocidad de disolución
 
+    private MaquinaDeEstados maquinaDeEstados;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -31,7 +33,8 @@ public class Distraction : MonoBehaviour
 
     IEnumerator StartDissolveAfterDelay(float delay)
     {
-        yield return new WaitForSeconds(delay); 
+        yield return new WaitForSeconds(delay);
+        maquinaDeEstados.VolverAPatrullar();
         Destroy(gameObject, 1f);
         while (dissolveStrength < 1)
         {
@@ -42,8 +45,6 @@ public class Distraction : MonoBehaviour
 
         material.SetFloat("_DissolveStrength", 1); 
     }
-
-
 
     void TriggerDistraction()
     {
@@ -59,8 +60,15 @@ public class Distraction : MonoBehaviour
                     enemy.Investigate(auxTransform.position);
                 }
             }
+            if (col.CompareTag("BadGranny"))
+            {
+                maquinaDeEstados = col.GetComponent<MaquinaDeEstados>();
+                if (maquinaDeEstados != null)
+                {
+                    maquinaDeEstados.ComprobarPan(auxTransform);
+                }
+            }
         }
-        
     }
 
     private void OnDrawGizmosSelected()

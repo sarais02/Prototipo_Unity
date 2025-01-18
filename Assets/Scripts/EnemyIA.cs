@@ -5,8 +5,8 @@ public class EnemyAI : MonoBehaviour
 {
     // Animator
     private Animator animator;
-    private AudioSource audioSource;
-    private AudioClip clip;
+    public AudioSource audioSource;
+    public AudioClip clip;
 
     // Enumeración para los tipos de enemigos
     public enum EnemyType
@@ -67,10 +67,10 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        DetectPlayer();
+        if (enemyType != EnemyType.LookSideToSide) DetectPlayer();
         if (playerDetected)
         {
-            player.GetComponent<PlayerRespawn>()?.KillPlayer();            
+            player.GetComponent<PlayerRespawn>()?.KillPlayer(2f);            
         }
         if (!isInvestigating)
         {
