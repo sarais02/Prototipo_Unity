@@ -34,7 +34,7 @@ public class Distraction : MonoBehaviour
     IEnumerator StartDissolveAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        maquinaDeEstados.VolverAPatrullar();
+        if(maquinaDeEstados != null) maquinaDeEstados.VolverAPatrullar();
         Destroy(gameObject, 1f);
         while (dissolveStrength < 1)
         {
