@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
         }
         
         // Obtener el valor de "IsTutorial"
-        int i = PlayerPrefs.GetInt("IsTutorial");
-        if (i == 1) tutorial = true;
-        else tutorial = false;
-        //tutorial = true;
+        //int i = PlayerPrefs.GetInt("IsTutorial");
+        //if (i == 1) tutorial = true;
+        //else tutorial = false;
+        tutorial = true;
         menu = true;
     }
 
