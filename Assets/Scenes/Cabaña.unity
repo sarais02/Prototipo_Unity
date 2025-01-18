@@ -819,7 +819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8879738759761128133, guid: a72e9df9c3a0e2b4ea9b9b45e27aaae4, type: 3}
       propertyPath: obstacleMask.m_Bits
-      value: 256
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8902786127677101589, guid: a72e9df9c3a0e2b4ea9b9b45e27aaae4, type: 3}
       propertyPath: m_Layer
@@ -14126,7 +14126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8879738759761128133, guid: a72e9df9c3a0e2b4ea9b9b45e27aaae4, type: 3}
       propertyPath: obstacleMask.m_Bits
-      value: 256
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8902786127677101589, guid: a72e9df9c3a0e2b4ea9b9b45e27aaae4, type: 3}
       propertyPath: m_Layer
